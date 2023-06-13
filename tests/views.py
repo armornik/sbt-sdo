@@ -167,8 +167,8 @@ def test_b(request):
         unanswered_questions_answer = []
 
         # Набираем список вопросов с ответами из общего словаря
-        while len(questions) < 28:
-            question_1 = QUESTIONS_A[random.choice(list(QUESTIONS_A))]
+        while len(questions) < 24:
+            question_1 = QUESTIONS_B[random.choice(list(QUESTIONS_B))]
             if question_1 not in questions:
                 questions.append(question_1)
     student.result_score = student.result_safe + student.read_safe
@@ -209,7 +209,7 @@ def test_b(request):
     # print(student.result_score)
     student.save()
     if student.result_score < 23:
-        return render(request, 'tests/test_a.html', context=context)
+        return render(request, 'tests/test_b.html', context=context)
     else:
         # answered = 0
         context = {
@@ -226,7 +226,7 @@ def test_b(request):
         student.read_safe = 0
         student.result_score = 0
         student.save()
-        return render(request, 'tests/result_test_a.html', context=context)
+        return render(request, 'tests/result_test_b.html', context=context)
 
 
 @login_required
@@ -236,6 +236,23 @@ def exit_test_a(request):
 
     student.result_general = 0
     student.read_general = 0
+    student.result_score = 0
+    student.save()
+
+    context = {
+        'title': f'СДО {NAME_ORGANIZATION}',
+        'name': NAME_ORGANIZATION,
+    }
+    return render(request, 'info/index.html', context=context)
+
+
+@login_required
+def exit_test_b(request):
+
+    student = AppUser.objects.filter(username=request.user).first()
+
+    student.result_safe = 0
+    student.read_safe = 0
     student.result_score = 0
     student.save()
 

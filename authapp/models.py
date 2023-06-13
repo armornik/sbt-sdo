@@ -16,7 +16,7 @@ class AppUser(AbstractUser):
     read_aid = models.IntegerField(verbose_name='R_Первая помощь', default=0)
 
     max_general = models.IntegerField(verbose_name='Max_Общие вопросы', default=27)
-    max_safe = models.IntegerField(verbose_name='Max_Безопасные методы', default=27)
+    max_safe = models.IntegerField(verbose_name='Max_Безопасные методы', default=23)
     max_danger = models.IntegerField(verbose_name='Max_Повышенная опасность', default=27)
     max_personal = models.IntegerField(verbose_name='Max_Индивидуальная защита', default=27)
     max_aid = models.IntegerField(verbose_name='Max_Первая помощь', default=27)
