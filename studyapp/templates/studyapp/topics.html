@@ -1,0 +1,52 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 150px; padding-bottom: 100px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+                    <div style="width: 100%">
+                        <div class="post-heading">
+                            <h4>Электронный курс</h4>
+                            <h2>Охрана труда с изменениями сентября 2022</h2>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+
+            <a href="{% url 'studyapp:study_start' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">А. Обучение по общим вопросам охраны труда и функционирования системы управления охраной труда</a>
+                        <br>
+            <a href="{% url 'studyapp:topics_b' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">Б. Безопасные методы и приемы выполнения работ при воздействии вредных и (или) опасных производственных факторов, опасностей, идентифицированных в рамках системы управления охраной труда в организации и оценки профессиональных рисков</a>
+                        <br>
+            <a href="{% url 'studyapp:topics_c' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">В. Безопасные методы и приемы выполнения работ повышенной опасности, к которым предъявляются дополнительные требования в соответствии с нормативными правовыми актами, содержащими государственные нормативные требования охраны труда</a>
+                        <br>
+            <a href="{% url 'studyapp:topics_d' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">Г. Средства индивидуальной защиты</a>
+                        <br>
+            <a href="{% url 'studyapp:topics_e' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%; min-height: 80px; padding-top: 25px;  padding-bottom: 25px;">Оказание первой помощи пострадавшим</a>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

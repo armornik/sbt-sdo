@@ -1,0 +1,141 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 150px; padding-bottom: 100px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+                    <div style="width: 100%">
+                        <div class="post-heading">
+                            <h4>Электронный курс</h4>
+                            <h2>В. Безопасные методы и приемы выполнения работ повышенной опасности</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="position: fixed; left: 10px; width: 20%;">
+  Вспомогательное меню по теме
+</a>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Обучение охране труда</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <b>В. Безопасные методы и приемы выполнения работ повышенной опасности</b>
+    </div>
+    <div class="dropdown mt-6">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;  width: 100%;">
+Выбрать тему
+      </button>
+
+
+              <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_3_1' %}" style="white-space: pre-wrap;">Тема 1. Основы охраны труда в Российской Федерации</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_3_2' %}" style="white-space: pre-wrap;">Тема 2. Безопасные методы и приемы выполнения работ повышенной опасности</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_3_3' %}" style="white-space: pre-wrap;">Тема 3. Работы на высоте</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_3_4' %}" style="white-space: pre-wrap;">Тема 4. Работы, связанные с работами кранов, подъемных механизмов</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_3_5' %}" style="white-space: pre-wrap;">Тема 5. Работы, связанные с эксплуатацией сосудов (баллонов) под давлением</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_3_6' %}" style="white-space: pre-wrap;">Тема 6. Работы по обслуживанию и ремонту тепловых энергоустановок</a></li>
+      </ul>
+
+
+
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;">
+        Тема 2. Безопасные методы и приемы выполнения работ повышенной опасности
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#concepts1" style="white-space: pre-wrap;">1. Безопасные методы и приемы выполнения работ повышенной опасности</a></li>
+        <li><a class="dropdown-item" href="#concepts2" style="white-space: pre-wrap;">2. Перечень работ повышенной опасности</a></li>
+        <li><a class="dropdown-item" href="#concepts3" style="white-space: pre-wrap;">3. Виды работ повышенной опасности</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts1"></a>Безопасные методы и приемы выполнения работ повышенной опасности</h2>
+
+<p style="white-space: pre-wrap;">К работам повышенной опасности относятся работы, при выполнении <b>которых имеется или может возникнуть производственная опасность вне связи с характером выполняемой работы.</b>
+
+При производстве указанных работ, <b>кроме обычных мер безопасности, необходимо выполнение дополнительных мероприятий,</b> разрабатываемых отдельно для каждой конкретной производственной операции.
+</p>
+
+<br>
+
+<h2 class="post-title" > <a name="concepts2"></a>Перечень работ повышенной опасности</h2>
+ <p style="white-space: pre-wrap;">В каждой организации на основе Примерного перечня работ повышенной опасности с учетом конкретных условий и особенностей технологии должен быть составлен и утвержден руководителем организации (главным инженером, техническим директором и т.п.) свой перечень работ повышенной опасности.
+
+Работы повышенной опасности следует выполнять только при наличии наряда-допуска и после проведения целевого инструктажа непосредственно на рабочем месте.
+ </p>
+
+<br>
+
+<h2 class="post-title" > <a name="concepts3"></a>Виды работ повышенной опасности</h2>
+ <p style="white-space: pre-wrap;"><b>Наиболее распространенные работы повышенной опасности:</b>
+• Работы на высоте и в местах перепадов высот (монтажные работы, демонтажные, строительные, фасадные работы).
+• Работы в зоне высоковольтных линий электропередачи.
+• Работы, связанные с открытым огнем (газосварка, газорезка).
+• Работы, связанные с эксплуатацией сосудов (баллонов) под давлением.
+• Работы, связанные с работами кранов, подъемных механизмов.
+• Работы, по обслуживанию и ремонту тепловых энергоустановок.
+• Работы по обслуживанию и ремонту электроустановок.
+• Работы в ограниченных и замкнутых пространствах.
+• Работы по обслуживанию или ремонту опасных производственных объектов.
+
+Более подробный перечень работ повышенной опасности представлен в <b>Приложении N 2 к Примерному положению о системе управления охраной труда, утвержденному приказом Министерства труда и социальной защиты Российской Федерации от 29 октября 2021 г. N 776н.</b>
+ </p>
+
+
+
+                        <br>
+  <div>
+      <a href="{% url 'studyapp:topic_3_1' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 1. Основы охраны труда в Российской Федерации</a>
+      <a href="{% url 'studyapp:topic_3_3' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 3. Работы на высоте</a>
+</div>
+
+                        <br>
+      <a href="{% url 'studyapp:topics_c' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">К выбору темы</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

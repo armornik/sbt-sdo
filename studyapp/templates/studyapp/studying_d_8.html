@@ -1,0 +1,249 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 150px; padding-bottom: 100px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+                    <div style="width: 100%">
+                        <div class="post-heading">
+                            <h4>Электронный курс</h4>
+                            <h2>Г. Средства индивидуальной защиты</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="position: fixed; left: 10px; width: 20%;">
+  Вспомогательное меню по теме
+</a>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Обучение охране труда</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <b>Г. Средства индивидуальной защиты</b>
+    </div>
+    <div class="dropdown mt-6">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;  width: 100%;">
+Выбрать тему
+      </button>
+
+
+              <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_1' %}" style="white-space: pre-wrap;">Тема 1. Средства индивидуальной защиты органов дыхания (СИЗОД)</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_2' %}" style="white-space: pre-wrap;">Тема 2. Средства индивидуальной защиты головы</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_3' %}" style="white-space: pre-wrap;">Тема 3. Средства индивидуальной защиты органов слуха</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_4' %}" style="white-space: pre-wrap;">Тема 4. Средства индивидуальной защиты глаз</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_5' %}" style="white-space: pre-wrap;">Тема 5. Средства индивидуальной защиты кожи</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_6' %}" style="white-space: pre-wrap;">Тема 6. Средства индивидуальной защиты рук</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_7' %}" style="white-space: pre-wrap;">Тема 7. Средства индивидуальной защиты от падения</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_8' %}" style="white-space: pre-wrap;">Тема 8. Специальная обувь</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_9' %}" style="white-space: pre-wrap;">Тема 9. Специальная одежда</a></li>
+      </ul>
+
+
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;">
+        Тема 8. Специальная обувь
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#concepts1" style="white-space: pre-wrap;">1. Факторы риска</a></li>
+        <li><a class="dropdown-item" href="#concepts2" style="white-space: pre-wrap;">2. Кожаная обувь</a></li>
+        <li><a class="dropdown-item" href="#concepts3" style="white-space: pre-wrap;">3. Обувь из ПВХ</a></li>
+        <li><a class="dropdown-item" href="#concepts4" style="white-space: pre-wrap;">4. Обувь утепленная</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts1"></a>Факторы риска</h2>
+
+<p style="white-space: pre-wrap;">• Падение тяжелых предметов
+• Удары
+• Защемление носка
+• Проколы подошвы
+• Горючие и едкие жидкости
+• Горячие вещества
+</p>
+
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts2"></a>Кожаная обувь</h2>
+
+<p style="white-space: pre-wrap;">• Ботинки или сапоги должны иметь: мягкую прокладку под подноском, профиль подошвы, препятствующий скольжению, глухой клапан для защиты стопы от пыли и грязи, широкий мягкий задний манжет (кант).
+• Ботинки должны иметь металлическую стельку для защиты от проколов.
+• Верх обуви: натуральная водостойкая тисненая кожа толщиной не менее 2мм.
+• Подошва: полиуретан или нитрил.
+• Материал должен сохранять защитные свойства при пониженных (до-20ºС) и повышенных (до +120ºС) температурах. Профиль подошвы должен быть более 4 мм.
+• Способ крепления подошвы: литьевой или горячая вулканизация.
+</p>
+
+<a name="events1"></a>
+                         <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px;">
+Защитный подносок
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#events1" style="white-space: break-spaces;">ЗАЩИТНЫЙ ПОДНОСОК ИЗ ПОЛИКАРБОНАТА
+• Состав: поликарбонат или сталь с антикоррозийной обработкой толщиной 1.5мм.
+• Легче металлического.
+• Выдерживает нагрузку до 200 Дж.
+• Сохраняет заданную форму.
+• Имеет меньшую теплопроводность.
+• Обладает немагнитными свойствами.
+    </a></li>
+  </ul>
+</div>
+
+       <a name="events2"></a>
+
+                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Кожаная обувь с жестким подноском
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item" href="#events2" style="white-space: break-spaces;"><b>Назначение:</b>
+Выполнение технологических операций с технологическим оборудованием и инструментом, кроме других работ, для которых предусмотрены другие виды спецобуви.
+
+Для строительных работ должны использоваться сапоги с металлической стелькой.
+
+<b>Виды:</b>
+Ботинки кожаные с жестким подноском
+Сапоги кожаные с жестким подноском
+</a></li>
+  </ul>
+</div>
+
+       <a name="events3"></a>
+                                                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Кожаная обувь для защиты от нефти и нефтепродуктов
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+    <li><a class="dropdown-item" href="#events3" style="white-space: break-spaces;"><b>Назначение: </b>
+Выполнение технологических операций с технологическим оборудованием и инструментом, при интенсивном контакте обуви с нефтью и нефтепродуктами.
+
+<b>Виды:</b>
+Ботинки кожаные для защиты от нефти и нефтепродуктов
+Сапоги кожаные для защиты от нефти и нефтепродуктов
+    </a></li>
+  </ul>
+</div>
+
+       <a name="events4"></a>
+
+                                                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Кожаная обувь для защиты от искр и брызг расплавленного металла
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+    <li><a class="dropdown-item" href="#events4" style="white-space: break-spaces;">• Обязательное наличие жесткого подноска.
+• Внешний клапан для защиты стопы от брызг расплавленного металла
+• Подошва из нитрильной резины
+
+<b>Назначение:</b>
+• сварочные работы и резка металла.
+• работы при повышенных (до +300ºС) температурах
+
+<b>Виды:</b>
+Ботинки кожаные для сварщиков
+    </a></li>
+  </ul>
+</div>
+
+
+                                            <h2 class="post-title"> <a name="concepts3"></a>Обувь из ПВХ</h2>
+
+<p style="white-space: pre-wrap;">• Сапоги литые из полимерного материала с подноском
+• Сапоги должны иметь: мягкую прокладку под подноском, профиль подошвы, препятствующий скольжению, металлическую стельку для защиты от проколов, а также могут комплектоваться утепляющим вкладышем.
+• Верх обуви: пластикат поливинилхлоридный толщиной менее 1,8 мм.
+• Длина голенища – 38 см или 90 см
+• Толщина подошвы вместе с рифом должна быть: в носочной части не менее 10 мм., в каблучной части не менее 20 мм.
+• Подносок: поликарбонат или сталь с антикоррозийной обработкой толщиной 1,5мм. Подносок должен выдерживать ударную нагрузку в 200 Дж.
+
+<b>Назначение:</b>
+Выполнение технологических операций с технологическим оборудованием и инструментом в условиях распутицы, болотистой местности, во время дождя.
+
+<b>Примеры обуви из ПВХ:</b>
+- Сапоги ПВХ маслобензостойкие с жестким подноском и металлической стелькой (поставляются с утепляющим вкладышем)
+- Сапоги ПВХ болотные маслобензостойкие с жестким подноском и металлической стелькой
+</p>
+
+                        <br>
+                                            <h2 class="post-title"> <a name="concepts4"></a>Обувь утепленная</h2>
+
+                               <a name="events5"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Кожаная обувь
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+    <li><a class="dropdown-item" href="#events5" style="white-space: break-spaces;"><b>Назначение:</b>
+Выполнение технологических операций с технологическим оборудованием и инструментом, в условиях пониженных температур (до -40°С).
+
+<b>Примеры обуви:</b>
+- Ботинки утепленные с жестким подноском
+- Сапоги утепленные с жестким подноском
+</a></li>
+  </ul>
+</div>
+
+                               <a name="events6"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Обувь из ПВХ
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+    <li><a class="dropdown-item" href="#events6" style="white-space: break-spaces;"><b>Назначение:</b>
+Выполнение технологических операций с технологическим оборудованием и инструментом, при интенсивном контакте обуви с нефтью и нефтепродуктами в условиях пониженных температур и экстремально низких температур.
+
+<b>Примеры обуви:</b>
+- Сапоги утепленные литые из полимерного материала с жестким подноском и металлической стелькой
+</a></li>
+  </ul>
+</div>
+
+
+
+                        <br>
+  <div>
+                        <a href="{% url 'studyapp:topic_4_7' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 7. Средства индивидуальной защиты от падения</a>
+                        <a href="{% url 'studyapp:topic_4_9' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 9. Специальная одежда</a>
+</div>
+
+                        <br>
+      <a href="{% url 'studyapp:topics_d' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">К выбору темы</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

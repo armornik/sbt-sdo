@@ -1,0 +1,142 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 150px; padding-bottom: 100px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+                    <div style="width: 100%">
+                        <div class="post-heading">
+                            <h4>Электронный курс</h4>
+                            <h2>Оказание первой помощи пострадавшим</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="position: fixed; left: 10px; width: 20%;">
+  Вспомогательное меню по теме
+</a>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Обучение охране труда</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <b>Оказание первой помощи пострадавшим</b>
+    </div>
+    <div class="dropdown mt-6">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;  width: 100%;">
+Выбрать тему
+      </button>
+
+
+              <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_0' %}" style="white-space: pre-wrap;">Введение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_1' %}" style="white-space: pre-wrap;">Тема 1. Кровотечение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_2' %}" style="white-space: pre-wrap;">Тема 2. Ушиб и растяжение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_3' %}" style="white-space: pre-wrap;">Тема 3. Сердечный приступ (инфаркт)</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_4' %}" style="white-space: pre-wrap;">Тема 4. Ожоги</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_5' %}" style="white-space: pre-wrap;">Тема 5. Потеря сознания (обморок)</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_6' %}" style="white-space: pre-wrap;">Тема 6. Перелом позвоночника</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_7' %}" style="white-space: pre-wrap;">Тема 7. Инсульт</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_8' %}" style="white-space: pre-wrap;">Тема 8. Электротравма</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_9' %}" style="white-space: pre-wrap;">Тема 9. Перелом</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_10' %}" style="white-space: pre-wrap;">Тема 10. Отравление</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_11' %}" style="white-space: pre-wrap;">Тема 11. Отморожение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_12' %}" style="white-space: pre-wrap;">Тема 12. Ранения</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_13' %}" style="white-space: pre-wrap;">Тема 13. Травмы</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_14' %}" style="white-space: pre-wrap;">Тема 14. Ампутация</a></li>
+      </ul>
+
+
+
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;">
+        Тема 2. Ушиб и растяжение
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#concepts1" style="white-space: pre-wrap;">1. Ушиб</a></li>
+        <li><a class="dropdown-item" href="#concepts2" style="white-space: pre-wrap;">2. Растяжение</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts1"></a>Ушиб</h2>
+
+<p style="white-space: pre-wrap;"><b>Симптомы:</b>
+• боль, резко усиливающаяся при движении
+• отек в области травмы
+• припухлость, гематома, кровоподтек на месте травмы
+• умеренное ограничение движения поврежденной конечности
+
+<b>Алгоритм действий:</b>
+1. Если есть малейшее <b>подозрение на более тяжелую травму</b> (перелом, вывих, повреждение внутренних органов и т.п.), то объем помощи должен соответствовать тяжести предполагемого повреждения.
+2. Наложить на область ушиба <b>давящую повязку.</b> Эффективны давящие повязки из эластичного бинта.
+3. Придать пострадавшему месту <b>возвышенное положение.</b>
+4. Приложить <b>холод</b> к месту ушиба поверх повязки.
+5. Создать <b>покой </b>пострадавшей части тела.
+6. Через <b>2-3 суток</b> после ушиба применять <b>тепловые процедуры</b> (согревающий компресс, теплые ванны и т.д.) и массаж.
+<img class="logo__image" src="{% static 'image/z11.png' %}">
+<b>Запрещено:</b>
+1. Растирать ушибленное место.
+2. Прикладывать тепло в течение первых 2-3 дней после ушиба.
+</p>
+                                              <h2 class="post-title"> <a name="concepts2"></a>Растяжение</h2>
+
+<p style="white-space: pre-wrap;"><b>Симптомы:</b>
+• боль, резко усиливающаяся при движении
+• отек в области травмы
+• припухлость, гематома, кровоподтек на месте травмы
+• нарушение функций поврежденного сустава.
+
+Алгоритм действий:
+1. Если есть малейшее <b>подозрение на более тяжелую травму</b> (перелом, вывих, повреждение внутренних органов и т.п.), то объем помощи должен соответствовать тяжести предполагемого повреждения.
+2. <b>Обеспечить покой</b> поврежденному суставу.
+3. <b>Наложить тугую повязку.</b> Оптимально использовать эластичный бинт.
+4. <b>Придать возвышенное положение </b>поврежденной конечности.
+5. Прикладывать <b>холодный компресс</b> к месту травмы на протяжении <b>12-24 часов.</b>
+6. <b>Тепловые процедуры</b> и постепенное восстановление нагрузок начинать <b>на 3 сутки</b> после травмы.
+<img class="logo__image" src="{% static 'image/z12.png' %}">
+<b>Запрещено:</b>
+1. Растирать область травмы.
+</p>
+
+                        <br>
+  <div>
+      <a href="{% url 'studyapp:topic_5_1' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 1. Кровотечение</a>
+      <a href="{% url 'studyapp:topic_5_3' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 3. Сердечный приступ</a>
+</div>
+
+                        <br>
+      <a href="{% url 'studyapp:topics_e' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">К выбору темы</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

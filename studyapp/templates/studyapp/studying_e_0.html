@@ -1,0 +1,222 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 150px; padding-bottom: 100px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+                    <div style="width: 100%">
+                        <div class="post-heading">
+                            <h4>Электронный курс</h4>
+                            <h2>Оказание первой помощи пострадавшим</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="position: fixed; left: 10px; width: 20%;">
+  Вспомогательное меню по теме
+</a>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Обучение охране труда</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <b>Оказание первой помощи пострадавшим</b>
+    </div>
+    <div class="dropdown mt-6">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;  width: 100%;">
+Выбрать тему
+      </button>
+
+
+              <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_0' %}" style="white-space: pre-wrap;">Введение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_1' %}" style="white-space: pre-wrap;">Тема 1. Кровотечение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_2' %}" style="white-space: pre-wrap;">Тема 2. Ушиб и растяжение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_3' %}" style="white-space: pre-wrap;">Тема 3. Сердечный приступ (инфаркт)</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_4' %}" style="white-space: pre-wrap;">Тема 4. Ожоги</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_5' %}" style="white-space: pre-wrap;">Тема 5. Потеря сознания (обморок)</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_6' %}" style="white-space: pre-wrap;">Тема 6. Перелом позвоночника</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_7' %}" style="white-space: pre-wrap;">Тема 7. Инсульт</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_8' %}" style="white-space: pre-wrap;">Тема 8. Электротравма</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_9' %}" style="white-space: pre-wrap;">Тема 9. Перелом</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_10' %}" style="white-space: pre-wrap;">Тема 10. Отравление</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_11' %}" style="white-space: pre-wrap;">Тема 11. Отморожение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_12' %}" style="white-space: pre-wrap;">Тема 12. Ранения</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_13' %}" style="white-space: pre-wrap;">Тема 13. Травмы</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_14' %}" style="white-space: pre-wrap;">Тема 14. Ампутация</a></li>
+      </ul>
+
+
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;">
+        Введение
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#concepts1" style="white-space: pre-wrap;">1. Введение</a></li>
+        <li><a class="dropdown-item" href="#concepts2" style="white-space: pre-wrap;">2. Юридический аспект оказания первой помощи</a></li>
+        <li><a class="dropdown-item" href="#concepts3" style="white-space: pre-wrap;">3. Вызов скорой помощи</a></li>
+        <li><a class="dropdown-item" href="#concepts4" style="white-space: pre-wrap;">4. Сердечно-легочная реанимация (СЛР)</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts1"></a>Введение</h2>
+
+<p style="white-space: pre-wrap;"><b>ДОБРО ПОЖАЛОВАТЬ НА КУРС «ОКАЗАНИЕ ПЕРВОЙ ПОМОЩИ ПОСТРАДАВШИМ»</b>
+
+Данный курс расскажет о том, как действовать в различных ситуациях, где требуется оказать помощь пострадавшему.
+
+Курс содержит самые разные темы: от проведения сердечно-легочной реанимации до распознавания и оказания первой помощи при различных заболеваниях.
+</p>
+
+
+                                             <h2 class="post-title"> <a name="concepts2"></a>Юридический аспект оказания первой помощи</h2>
+
+<p style="white-space: pre-wrap;"><b>ВЫ НЕ МОЖЕТЕ оказать помощь человеку, если он от нее отказался!</b>
+1. Статья «Оставление в опасности» предполагает ответственность гражданина, не сообщившего о случившемся и прошедшего мимо пострадавшего. Однако перед оказанием первой помощи требуется спросить <b>согласия пострадавшего</b> и только после его получения предпринимать какие-либо действия.
+2. Существует ряд ситуаций, в которых обязательное согласие пострадавшего не требуется. Можно оказывать первую помощь <b>без получения согласия,</b> если:
+– человек находится без сознания
+– предпринимается попытка суицида
+– пострадал ребенок до 15 лет.
+3. Если пострадавший <b>представляет опасность</b> – помощь лучше <b>не оказывать.</b>
+4. При оказании первой помощи <b>не следует превышать свою квалификацию:</b> нельзя давать (назначать) любые медикаменты, нельзя производить любые медицинские манипуляции (вправлять вывихи, делать уколы и т.п.).
+</p>
+
+
+                                             <h2 class="post-title"> <a name="concepts3"></a>Вызов скорой помощи</h2>
+
+<p style="white-space: pre-wrap;">При общении с диспетчером <b>не кричите,</b> четко и ясно <b>сообщите:</b>
+    • что произошло и кому нужна помощь
+    • вид и тяжесть травм, каковы симптомы, состояния пострадавших, жалобы где и когда произошел инцидент
+    • сведения о любых опасностях, ограничениях доступа и рисках
+    • какие меры уже приняты, кто вызывает помощь
+    • отвечайте на дальнейшие вопросы диспетчера, от Ваших ответов зависит выбор специализации бригад, которые к Вам направят, а значит – квалифицированное оказание помощи.
+
+Вы можете <b>спросить диспетчера</b> о порядке Ваших действий в ожидании помощи.
+
+Не кладите трубку первым, помните – <b>разговор заканчивает диспетчер!  </b>
+
+При прибытии специалистов экстренных служб обеспечьте им <b>беспрепятственный доступ</b> к пострадавшим и необходимые условия для оказания помощи, оказывайте им <b>содействие.</b>
+</p>
+
+
+                                             <h2 class="post-title"> <a name="concepts4"></a>Сердечно-легочная реанимация (СЛР)</h2>
+
+<p style="white-space: pre-wrap;">Знание основ оказания первой неотложной помощи и сердечно- легочной реанимации очень важно – это <b>может спасти жизнь.</b>
+
+Без сердечно-легочной реанимации всего за <b>несколько минут</b> мозг человека может пострадать из-за недостатка кислорода.
+</p>
+
+<a name="events1"></a>
+                         <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px;">
+Алгоритм действий
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#events1" style="white-space: break-spaces;">1. <b>Оценить сознание</b> пострадавшего. Для этого нужно попробовать поговорить с ним или слегка потрясти его за плечо. При отсутствии реакции – разомните мочки ушей. Если реакция по-прежнему отсутствует, то жизни человека угрожает опасность, т.к. язык может блокировать верхние дыхательные пути.
+2. Определить наличие самостоятельного дыхания:
+<img class="logo__image" src="{% static 'image/z1.png' %}">
+– посмотреть на грудную клетку – она должна подниматься и опускаться
+– положить на грудную клетку руки, чтобы почувствовать ее движение
+– наклониться ухом ко рту и носу человека и попробовать услышать дыхание.
+3. Попросить окружающих <b>вызвать скорую</b> медицинскую помощь. Если Вы один на один с пострадавшим, то сначала необходимо в течение двух минут провести <b>реанимационные мероприятия,</b> а потом вызвать скорую помощь!
+4. Убедиться в отсутствии признаков <b>биологической смерти</b> у пострадавшего. Наличие явных признаков биологической смерти может сделать реанимационные мероприятия бессмысленными.
+5. Обеспечить <b>проходимость дыхательных путей.</b> Прежде чем начать искусственное дыхание, необходимо:
+– уложить пострадавшего горизонтально на спину на твердую поверхность, голова запрокинута назад (одну руку под шею, другую – на лоб, под шею можно положить валик). При подозрении на перелом шейного отдела позвоночника запрокидывать голову нельзя, следует ограничиться выдвижением челюсти и открытием рта.
+    </a></li>
+  </ul>
+</div>
+
+       <a name="events2"></a>
+
+                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Наружный (непрямой) массаж сердца
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item" href="#events2" style="white-space: break-spaces;">1. Определить <b>точку проведения давления на грудную клетку:</b>
+– слегка нажимая, провести безымянным пальцем руки от пупка пострадавшего к грудине;
+– остановить палец в том месте, где прочувствуется сопротивление (мечевидный отросток) и приложить к нему средний и указательный пальцы;
+– точка, находящаяся выше этих двух пальцев, является точкой, куда прилагается усилие при проведении наружного (закрытого, непрямого) массажа сердца.
+2. Если остановка сердца произошла в вашем присутствии, нужно осуществить <b>прекардиальные</b> (над областью сердца) удары – два раза сильно ударить в найденную точку на грудине кулаком. После ударов проверить пульс на сонной артерии. Если пульса нет – приступить к наружному массажу сердца.
+3. Убедиться, что пострадавший лежит на жестком основании, желательно приподнять ноги.
+4. При проведении наружного массажа сердца грудина должна прогибаться на 5-6 см. Надавливания на грудину выполняются на глубину, равную одной трети переднезаднего размера грудной клетки (примерно 4 см. у детей до 1 года и 5 см. у детей более старшего возраста).
+5. Сцепить пальцы рук и основанием ладони нажать в точку массажа. Важно, чтобы нажатия осуществлялись <b>строго перпендикулярно грудине,</b> иначе можно повредить ребра. Младенцу массаж сердца производить двумя пальцами, а ребенку – ладонью одной руки.
+<img class="logo__image" src="{% static 'image/z2.png' %}">
+    </a></li>
+  </ul>
+</div>
+
+       <a name="events3"></a>
+
+                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Искусственное дыхание способом «рот ко рту»
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+    <li><a class="dropdown-item" href="#events3" style="white-space: break-spaces;">1. Оттянуть нижнюю челюсть вперед и вниз одной рукой, пальцами другой руки зажать нос (плотно сжать крылья носа).
+2. Все время необходимо следить за положением головы <b>(запрокинутое),</b> обеспечивающим проходимость дыхательных путей и <b>незападение языка!</b>
+3. Наклониться к пострадавшему, плотно прижаться губами к его открытому рту и сделать максимальный выдох, контролируя эффективность вдоха пострадавшего по движению грудной клетки (расправлению). При этом можно использовать прокладку из 1-2 (но не более) слоев марли.
+<img class="logo__image" src="{% static 'image/z3.png' %}">
+    </a></li>
+  </ul>
+</div>
+
+       <a name="events4"></a>
+
+                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Искусственное дыхание способом «рот к носу»
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+    <li><a class="dropdown-item" href="#events4" style="white-space: break-spaces;">1. Плотно закрыть рот пострадавшего.
+2. Все время необходимо следить за положением головы <b>(запрокинутое),</b> обеспечивающим проходимость дыхательных путей и <b>незападение языка!</b>
+3. Наклониться к пострадавшему, плотно прижаться губами к обеим ноздрям его носа и сделать максимальный выдох, контролируя эффективность вдоха пострадавшего по движению грудной клетки (расправлению).
+4. Объем выдоха для взрослого человека – 0,8-1,2 л. Грудным детям делают только <b>короткие вдувания,</b> чтобы избежать разрыва легкиз, объем вдуваемого воздуха при этом равен объему защечного пространства при раздутых щеках.
+5. После расправления грудной клетки отнять свой рот от носа пострадавшего для обеспечения самостоятельного выхода воздуха из легких.
+6. Выдохи следует делать: взрослым каждые 5 секунд (12 в 1 мин); детям – каждые 3 секунды (20 в 1 мин). Интервалы между выдохами и глубина каждого выдоза должны быть <b>одинаковыми.</b>
+7. Если после проведенных первых 2 вдуваний самостоятельное дыхание у пострадавшего не появилось – необходимо <b>проверить пульс</b> на сонной артерии.
+    </a></li>
+  </ul>
+</div>
+
+                        <br>
+
+                         <a href="{% url 'studyapp:topic_5_1' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">Тема 1. Кровотечение</a>
+                         <a href="{% url 'studyapp:topics_e' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">К выбору темы</a>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

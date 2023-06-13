@@ -1,0 +1,318 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 150px; padding-bottom: 100px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+                    <div style="width: 100%">
+                        <div class="post-heading">
+                            <h4>Электронный курс</h4>
+                            <h2>Г. Средства индивидуальной защиты</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="position: fixed; left: 10px; width: 20%;">
+  Вспомогательное меню по теме
+</a>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Обучение охране труда</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <b>Г. Средства индивидуальной защиты</b>
+    </div>
+    <div class="dropdown mt-6">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;  width: 100%;">
+Выбрать тему
+      </button>
+
+
+              <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_1' %}" style="white-space: pre-wrap;">Тема 1. Средства индивидуальной защиты органов дыхания (СИЗОД)</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_2' %}" style="white-space: pre-wrap;">Тема 2. Средства индивидуальной защиты головы</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_3' %}" style="white-space: pre-wrap;">Тема 3. Средства индивидуальной защиты органов слуха</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_4' %}" style="white-space: pre-wrap;">Тема 4. Средства индивидуальной защиты глаз</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_5' %}" style="white-space: pre-wrap;">Тема 5. Средства индивидуальной защиты кожи</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_6' %}" style="white-space: pre-wrap;">Тема 6. Средства индивидуальной защиты рук</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_7' %}" style="white-space: pre-wrap;">Тема 7. Средства индивидуальной защиты от падения</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_8' %}" style="white-space: pre-wrap;">Тема 8. Специальная обувь</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_9' %}" style="white-space: pre-wrap;">Тема 9. Специальная одежда</a></li>
+      </ul>
+
+
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;">
+        Тема 4. Средства индивидуальной защиты глаз
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#concepts1" style="white-space: pre-wrap;">1. Почему необходима защита глаз</a></li>
+        <li><a class="dropdown-item" href="#concepts2" style="white-space: pre-wrap;">2. Факторы риска</a></li>
+        <li><a class="dropdown-item" href="#concepts3" style="white-space: pre-wrap;">3. Спектрограмма</a></li>
+        <li><a class="dropdown-item" href="#concepts4" style="white-space: pre-wrap;">4. Классификация СИЗ глаз</a></li>
+        <li><a class="dropdown-item" href="#concepts5" style="white-space: pre-wrap;">5. Рекомендации по эффективному использованию</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts1"></a>Почему необходима защита глаз</h2>
+
+<p style="white-space: pre-wrap;">Защита глаз и лица необходима, когда технические приспособления и организационные мероприятия не могут исключить поражений глаз.
+
+Как показывает статистика, <b>в 65% случаев травма глаз на производстве происходит из-за того, что рабочие не применяют имеющихся средств защиты.</b>
+
+Травма органов зрения приводит нередко <b>к стойкой утрате трудоспособности.</b>
+</p>
+                        <br>
+<h2 class="post-title"> <a name="concepts2"></a>Факторы риска</h2>
+
+<a name="events1"></a>
+                         <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px;">
+Механические факторы риска
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#events1" style="white-space: break-spaces;"><b>Источники:</b> удары, пыль, твердые частицы, металлические осколки, песок
+
+<b>Последствия:</b> поражения или перфорация роговой оболочки глаза, разрыв радужной оболочки глаза , помутнение хрусталика
+    </a></li>
+  </ul>
+</div>
+
+
+       <a name="events2"></a>
+
+                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Химические факторы риска
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item" href="#events2" style="white-space: break-spaces;"><b>Источники:</b> брызги и выбросы жидкостей : растворителей, аэрозолей, кислот, цемента, извести и т.д.
+
+<b>Последствия:</b> ожоги или повреждения роговой оболочки, вирусные заболевания, острые конъюнктивиты, язвы
+</a></li>
+  </ul>
+</div>
+
+       <a name="events3"></a>
+                                                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Термические факторы риска
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+    <li><a class="dropdown-item" href="#events3" style="white-space: break-spaces;"><b>Источники:</b> горячие жидкости, расплавленные материалы, пламя
+
+<b>Последствия:</b> разрушение глаза, помутнение роговой оболочки
+    </a></li>
+  </ul>
+</div>
+
+       <a name="events4"></a>
+
+                                                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Факторы риска, связанные с излучением
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+    <li><a class="dropdown-item" href="#events4" style="white-space: break-spaces;">Источники: инфракрасные лучи, ультрафиолетовые лучи, лазер, яркий свет
+
+Последствия: катаракта, кератит, поражения или ожоги сетчатки, помутнение хрусталика
+    </a></li>
+  </ul>
+</div>
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts3"></a>Спектрограмма</h2>
+
+<p style="white-space: pre-wrap;"><b>Ультрафиолетовые лучи</b> (UV): невидимы невооруженным человеческим глазом (200-380 нм) 5% солнечной энергии достигает Земли в виде УФ излучения.
+
+<b>Видимый свет</b> (между 380 и 780 нм): 45% солнечной энергии достигает Земли в виде именно таких лучей, которые обеспечивают глазам цветовое восприятие.
+
+<b>Инфракрасные лучи</b> (IR): невидимы невооруженным человеческим глазом (свыше 780 нм). 50 % солнечной энергии достигает Земли в виде теплового излучения.
+</p>
+
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts4"></a>Классификация СИЗ глаз</h2>
+
+                               <a name="events5"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Очки защитные открытые
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+    <li><a class="dropdown-item" href="#events5" style="white-space: break-spaces;">• Конструкция очков должна предотвращать возникновение точек давления на чувствительную область носа, глаз ушей.
+• Конструкция очков может допускать их ношение с корригирующими очками
+• Очки должны обеспечивать отсутствие усталости глаз при их использовании в течение всей рабочей смены
+• Имеют небольшой вес
+• Регулировка дужек по длине и наклону к линзе
+
+<b>Требования стандарта</b>
+Линзы очков должны иметь:
+• Асферическую форму, обеспечивающую панорамный обзор без помех и искажений
+• Максимальную площадь защиты около глазного пространства
+• Оптический класс -1
+• Специальные покрытия защищающие линзы от образования царапин и запотевания снаружи и внутри
+• Поглощать не менее 99% ультрафиолетового излучения
+<b>ВНИМАНИЕ! ЗАПРЕЩЕНО</b> использование очков с линзами из силикатного стекла, с оптическим классом ниже 1!
+
+<b>Пример маркировки линз</b>
+<img class="logo__image" src="{% static 'image/linz.png' %}">
+
+<b>Пример маркировки оправ</b>
+<img class="logo__image" src="{% static 'image/oprava.png' %}">
+
+<b>ВИДЫ ЛИНЗ:</b>
+- <b>Прозрачные линзы.</b>  Назначение:механическая работа на открытом воздухе и помещений внутри цехов в условиях хорошей видимости.
+- <b>Линзы серого или бронзового цвета.</b> Назначение: работа на открытом воздухе, механическая работа в условиях слепящего света и солнечного излучения. Управление автотранспортными средствами (отличное световосприятие).
+- <b>Линзы янтарного цвета.</b> Назначение: работа в условиях недостаточной освещенности, как на открытом воздухе так и внутри помещений, для максимального повышения контраста. Для работ связанных с необходимостью производить контроль качества обработки поверхности, механическая работа.
+- <b>Линзы для использования в условиях резкой смены освещенности.</b> Назначение: работа в условиях чередования высокой и низкой освещенности. Складские работы, вилочные погрузчики, механическая работа.
+- <b>Линзы со степенью ослабления инфракрасного излучения 3.0 и 5.0.</b> Назначение: Защита от ультрафиолета, видимого света и инфракрасного излучения. Газовая сварка, пайка твердым припоем, ацетелено-кислородная резка, вспомогательные работы.
+
+<b>ОЧКИ ДЛЯ ПОСЕТИТЕЛЕЙ</b>
+• Легкие поликарбонатные очки имеющие формованные боковые щитки, надбровные обтюраторы
+• Могут носится как отдельно, так и поверх корригирующих очков
+• Оптический класс -1
+<b>Очки предназначены только для посетителей!</b>
+    </a></li>
+  </ul>
+</div>
+                               <a name="events6"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Очки защитные закрытые
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+    <li><a class="dropdown-item" href="#events6" style="white-space: break-spaces;">Очки должны состоять:
+• из корпуса, химически стойкой панорамной линзы поликарбоната или ацетата
+• обтюратора плотно прилегающего к лицу
+• наголовной ленты с регулировкой длины по размеру
+<b>ВНИМАНИЕ! ЗАПРЕЩЕНО </b>использование очков с линзами из силикатного стекла, с оптическим классом ниже 1!
+
+<b>Особенности </b>
+• оптимальная вентиляция (непрямая направленная вентиляция);
+• широкая, легко регулируемая лента;
+• снаружи стойкие к царапинам;
+• изнутри не запотевают;
+• линза, стойкая к ударам;
+• одеваются на любые коррегирующие очки.
+
+<b>Назначение</b>
+Для защиты глаз спереди и с боков, сверху и снизу, от механического воздействия, от воздействия окружающей среды, пыли, газов, паров, аэрозолей, и капель химических продуктов.
+
+<b>Обтюратор с силиконом, ПВХ</b>
+Рекомендуется использовать для работ в условиях с низкими температурами (до -600˚С).
+
+<b>Обтюратор из полипропилена или поролона</b>
+Для интенсивных работ и при высоких t˚.
+    </a></li>
+  </ul>
+</div>
+
+
+                               <a name="events7"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Очки защитные закрытые для защиты от излучений
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton7">
+    <li><a class="dropdown-item" href="#events7" style="white-space: break-spaces;"><b>Очки должны иметь:</b>
+• отверстия для обеспечения непрямой вентиляции
+• пространства под панорамным светофильтром
+• специальные покрытие защищающие светофильтр от налипания брызг расплавленного металла, от царапин снаружи и от запотевания внутри
+• конструктивные элементы для крепления щитка для защиты лица
+<b>ВНИМАНИЕ! ЗАПРЕЩЕНО использование очков с линзами из силикатного стекла, с оптическим классом ниже 1!</b>
+
+<b>Назначение</b>
+·  Для защиты глаз <b>спереди и с боков, сверху и снизу</b> от сильных механических повреждений, ультрафиолетового и инфракрасного излучений, брызг расплавленного металла при газосварке и резке металлов.
+· Для помощника газосварщика, а также для работников, которые находятся на расстоянии не больше 2-х метров от места выполнения, работ связанных с газосваркой и газорезкой. Обязательно ношение очков со светофильтром 3 степени.
+   </a></li>
+  </ul>
+</div>
+
+
+                               <a name="events8"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton8" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Щитки защитные лицевые
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton8">
+    <li><a class="dropdown-item" href="#events8" style="white-space: break-spaces;"><b>Щиток лицевой должен:</b>
+• состоять из прозрачного корпуса из поликарбоната
+• иметь наголовное крепление
+• крепление к защитной каске
+<b>Щитки лицевые должны применятся только с касками того же производства.</b>
+
+<b>Щиток для электросварки:</b>
+• Щиток, состоящий из непрозрачного термостойкого корпуса.
+• С наголовным креплением, в котором установлен сменный светофильтр (С4-С9).
+
+<b>Щиток лицевой электросварщика с автоматически затемняющимся светофильтром:</b>
+• Установлен автоматически затемняющийся сменный светофильтрзащищенный бесцветными стеклами.
+• Должен состоять из непрозрачного термостойкого корпуса с наголовным креплением.
+• Светофильтр может иметь ручную регулировку степени и скорости затемнения.
+• Температурный диапазон работы автоматически затемняющегося светофильтра от -50˚С до +550˚С.
+    </a></li>
+  </ul>
+</div>
+
+ <br>
+                <h2 class="post-title"> <a name="concepts5"></a>Рекомендации по эффективному использованию</h2>
+
+<p style="white-space: pre-wrap;">• Хранить защитные очки в сухих помещениях при температуре до +20˚С вдали от нагревательных приборов, избегая попадания прямых солнечных лучей (в том числе и у стекла автомобиля).
+• Чистить загрязнённые очки проточной водой или специальными очищающими растворами, рекомендованными производителями очков, также при помощи станции очистки очков.
+
+<b>Аксессуары.</b> В качестве аксессуаров к защитным очкам могут поставляться шнурок, чехол (футляр) для хранения и специальные салфетки для ухода за очками (не менее 15 штук влажных или 1 тканевая).
+
+<b>Замена</b>
+• При поломке оправы или при появлении трещин на линзах.
+• Если линзы поцарапаны настолько, что это мешает нормальному зрительному восприятию.
+
+Только <b>постоянное</b> использование СИЗ глаз в течение <b>всего рабочего дня</b> может гарантировать Вашу безопасность.
+</p>
+
+                        <br>
+  <div>
+      <a href="{% url 'studyapp:topic_4_3' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 3. Средства индивидуальной защиты органов слуха</a>
+      <a href="{% url 'studyapp:topic_4_5' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 5. Средства индивидуальной защиты кожи</a>
+</div>
+
+                        <br>
+      <a href="{% url 'studyapp:topics_d' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">К выбору темы</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

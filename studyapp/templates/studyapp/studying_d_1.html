@@ -1,0 +1,454 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 150px; padding-bottom: 100px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+                    <div style="width: 100%">
+                        <div class="post-heading">
+                            <h4>Электронный курс</h4>
+                            <h2>Г. Средства индивидуальной защиты</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="position: fixed; left: 10px; width: 20%;">
+  Вспомогательное меню по теме
+</a>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Обучение охране труда</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <b>Г. Средства индивидуальной защиты</b>
+    </div>
+    <div class="dropdown mt-6">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;  width: 100%;">
+Выбрать тему
+      </button>
+
+
+              <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_1' %}" style="white-space: pre-wrap;">Тема 1. Средства индивидуальной защиты органов дыхания (СИЗОД)</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_2' %}" style="white-space: pre-wrap;">Тема 2. Средства индивидуальной защиты головы</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_3' %}" style="white-space: pre-wrap;">Тема 3. Средства индивидуальной защиты органов слуха</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_4' %}" style="white-space: pre-wrap;">Тема 4. Средства индивидуальной защиты глаз</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_5' %}" style="white-space: pre-wrap;">Тема 5. Средства индивидуальной защиты кожи</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_6' %}" style="white-space: pre-wrap;">Тема 6. Средства индивидуальной защиты рук</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_7' %}" style="white-space: pre-wrap;">Тема 7. Средства индивидуальной защиты от падения</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_8' %}" style="white-space: pre-wrap;">Тема 8. Специальная обувь</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_9' %}" style="white-space: pre-wrap;">Тема 9. Специальная одежда</a></li>
+      </ul>
+
+
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;">
+        Тема 1. Средства индивидуальной защиты органов дыхания (СИЗОД)
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#concepts1" style="white-space: pre-wrap;">1. Респираторы</a></li>
+        <li><a class="dropdown-item" href="#concepts2" style="white-space: pre-wrap;">2. Полумаски</a></li>
+        <li><a class="dropdown-item" href="#concepts3" style="white-space: pre-wrap;">3. Маски</a></li>
+        <li><a class="dropdown-item" href="#concepts4" style="white-space: pre-wrap;">4. Шланговые противогазы</a></li>
+        <li><a class="dropdown-item" href="#concepts5" style="white-space: pre-wrap;">5. Изолирующие СИЗ</a></li>
+        <li><a class="dropdown-item" href="#concepts6" style="white-space: pre-wrap;">6. Самоспасатели </a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br>
+                                               <h2 class="post-title"> Средства индивидуальной защиты органов дыхания (СИЗОД)</h2>
+
+<p style="white-space: pre-wrap;">1-е место среди профессиональных заболеваний (свыше 35%) – это <b>респираторные заболевания.</b>
+
+Из них:
+· 44% зарегистрированных случаев закончились постоянной потерей трудоспособности
+· 20% заболеваний – результат отсутствия или неправильного использования СИЗ
+</p>
+
+<a name="events1"></a>
+                         <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px;">
+Вредные вещества, попадающие в организм через дыхательные пути
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#events1" style="white-space: break-spaces;">- Пыль
+- Дымы
+- Туман
+- Пары
+- Газы
+    </a></li>
+
+  </ul>
+</div>
+
+       <a name="events2"></a>
+
+                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Заболевания органов дыхания
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item" href="#events2" style="white-space: break-spaces;"><b>Антракоз</b> – профзаболевание рабочих угольных шахт, вследствие отложения в легких угольной пыли.
+
+<b>Асбестоз</b> — болезнь легких, при которой легочная ткань постепенно заменяется фиброзной тканью в результате вдыхания асбестовой пыли или волокон асбеста.
+
+<b>Силикоз</b> – заболевание, которое развивается в результате длительного вдыхания человеком вредной пыли, содержащей в своем составе двуокись кремния.
+</a></li>
+
+  </ul>
+</div>
+
+<p style="white-space: pre-wrap;">Классификация СИЗОД:
+- Респираторы;
+- Полумаски;
+- Маски;
+- Шланговые противогазы;
+- Изолирующие СИЗ;
+- Самоспасатели.
+</p>
+
+                                             <h2 class="post-title"> <a name="concepts1"></a>Респираторы</h2>
+
+<p style="white-space: pre-wrap;">• Респиратор имеет форму полумаски из фильтрующего негорючего материала;
+• Фиксируется на голове с помощью двух резинок;
+• Имеет маркировку фильтрующей эффективности FFP1(низкая), FFP2 (средняя) или FFP3 (высокая);
+• Обеспечивает защиту от нетоксичной пыли и туманов до 4 ПДК (FFP1), до 12 ПДК (FFP2), до 50 ПДК (FFP3);
+• Остается работоспособным в температурном в интервале от –30˚С до +70˚С;
+• Респираторы могут быть снабжены клапаном выдоха или поставляться без него.
+</p>
+
+
+       <a name="events3"></a>
+                                                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Степени защиты респираторов
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+    <li><a class="dropdown-item" href="#events3" style="white-space: break-spaces;"><img class="logo__image"
+                                                                    src="{% static 'image/class.png' %}">
+    </a></li>
+
+  </ul>
+</div>
+
+<p style="white-space: pre-wrap;">Виды респираторов:
+</p>
+
+       <a name="events4"></a>
+
+                                                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Противоаэрозольные респираторы без клапана выдоха
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+    <li><a class="dropdown-item" href="#events4" style="white-space: break-spaces;"><b>Класс защиты:</b>
+• 1 класс: FFP1, до 4 ПДК
+• 2 класс: FFP2, до 12 ПДК
+
+<b>Назначение:</b> шлифование, пескоструйные работы, резка, фрезерование, защита от пыли металлической окалины, цементной, пищевой и древесной пыли.
+    </a></li>
+
+  </ul>
+</div>
+
+       <a name="events5"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Противоаэрозольные респираторы, снабженные клапаном выдоха
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+    <li><a class="dropdown-item" href="#events5" style="white-space: break-spaces;"><b>Класс защиты:</b>
+• 1 класс: FFP1, до 4 ПДК
+• 2 класс: FFP2, до 12 ПДК
+• 3 класс: FFP3, до 50 ПДК
+
+<b>Назначение:</b> промышленные работы, связанные с тонкодисперсной пылью, радионуклидов.
+    </a></li>
+
+  </ul>
+</div>
+
+       <a name="events6"></a>
+
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Противогазоаэрозольные респираторы с дополнительной защитой от сварочных аэрозолей
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+    <li><a class="dropdown-item"  href="#events6" style="white-space: break-spaces;"><b>Обладает:</b>
+• Защитой FFP2,до 12 ПДК по аэрозолями, дополнительной защитой от озона газовой составляющей сварочного аэрозоля
+• Негорючим и не поддерживающим горение наружным слоем
+• Низкопрофильной конструкцией фильтра, позволяющей использовать респиратор под щитком сварщика.
+    </a></li>
+
+  </ul>
+</div>
+
+<p style="white-space: pre-wrap;"><b>Действие фильтрующих респираторов:</b>
+• Аэрозоль механически или электростатически захватывается фильтром;
+• Газы и пары абсорбируются на активированный уголь;
+• При необходимости применяются оба метода (комбинированное средство).
+</p>
+
+       <a name="events7"></a>
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Фильтрующий слой в действии
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton7">
+    <li><a class="dropdown-item" href="#events7" style="white-space: break-spaces;">• Фильтр улавливает частицы
+• Частицы (пыль, туман, дымы), физически задерживаются слоями волокна
+• Электростатический заряд способен сделать фильтр более эффективным без добавления дополнительных слоев фильтра
+
+<b>Данные респираторы не защищают от газов и паров!</b>
+    </a></li>
+
+  </ul>
+</div>
+
+<p style="white-space: pre-wrap;"><b>ЗАПРЕЩАЕТСЯ использование респираторов,</b> если:
+• Содержание кислорода в воздухе не превышает 18%
+• Помещения плохо вентилируются, или невозможно точно определить концентрацию в воздухе отравляющих веществ
+• В воздухе могут присутствовать неизвестные отравляющие вещества
+• В помещении высокая влажность, что приводит к разрушению сорбирующего вещества фильтра
+• Газы или пары вредных веществ раздражают слизистые оболочки глаз, носа и горла
+</p>
+
+                        <br>
+
+<h3 class="post-title"> СНЯТИЕ РЕСПИРАТОРОВ</h3>
+
+<p style="white-space: pre-wrap;"><b>Правила снятия респираторов:</b>
+• Не прикасайтесь к передней части респиратора, он может быть загрязнен!
+• Снимайте респиратор, используя ремешки.
+• После этого использованный респиратор нужно выкинуть в урну и помыть руки.
+</p>
+                        <br>
+<h2 class="post-title"> <a name="concepts2"></a>Полумаски</h2>
+                        <br>
+<h3 class="post-title"> ПОЛУМАСКИ ИЗ ИЗОЛИРУЮЩЕГО МАТЕРИАЛА</h3>
+
+<p style="white-space: pre-wrap;"><b>Полумаска из изолирующего материала должна:</b>
+• изготовлена из термопластика, выдерживающего высокие температуры, или из силикона
+• хорошо сбалансирована
+• иметь небольшое сопротивление дыханию
+• оснащена надежной (байонетной) системой крепления фильтров к полумаске
+• оснащена клапаном выдоха, снижающим накопление тепла и влаги в подмасочном пространстве
+• обеспечивает плотное прилегание к лицу любого типа
+• совместима с другими СИЗ (очками, лицевыми щитками, касками)
+• не вызывать раздражения кожи лица
+• оставаться работоспособной в температурном интервале от –30˚С до +70˚С.
+
+<b>ВНИМАНИЕ! Не допускается приобретение сменных фильтров, имеющих несовместимые крепления с маской.</b>
+
+<b>ЗАПРЕЩАЕТСЯ использование полумасок, если:</b>
+• содержание кислорода в воздухе не превышает 18%
+• помещения плохо вентилируются, или невозможно точно определить концентрацию в воздухе отравляющих веществ
+• в воздухе могут присутствовать неизвестные отравляющие вещества
+• в помещении высокая влажность, что приводит к разрушению сорбирующего вещества фильтра
+• газы или пары вредных веществ раздражают слизистые оболочки глаз, носа и горла
+</p>
+
+                        <br>
+<h2 class="post-title"> <a name="concepts3"></a>Маски</h2>
+
+                        <br>
+<h3 class="post-title"> МАСКИ ИЗ ИЗОЛИРУЮЩЕГО МАТЕРИАЛА</h3>
+
+<p style="white-space: pre-wrap;"><b>Маска из изолирующего материала должна:</b>
+• быть изготовлена из термопластика, выдерживающего высокие температуры, или из силикона;
+• быть хорошо сбалансирована;
+• оптически скорригирована, не иметь оптических искажений;
+• обеспечивать хороший обзор, не должна запотевать изнутри;
+• иметь речевую диафрагму, небольшое сопротивление дыханию;
+• оснащена надежной байонетной либо резьбовой системой крепления фильтров к маске;
+• обеспечивать плотное прилегание к лицу любого типа;
+• совместима с другими СИЗ (очками, лицевыми щитками, касками);
+• не вызывать раздражения кожи лица;
+• оставаться работоспособной в температурном интервале от 30˚С до +70˚С.
+
+<b>ВНИМАНИЕ! Не допускается приобретение сменных фильтров, имеющих несовместимые крепления с маской.</b>
+
+<b>Виды масок:</b>
+Маски из изолирующего материала с байонетным креплением
+Маски из изолирующего материала с резьбовым соединением
+</p>
+
+       <a name="events8"></a>
+
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton8" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Назначение
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton8">
+    <li><a class="dropdown-item" href="#events8" style="white-space: break-spaces;">Любые работы в атмосфере повышенной запыленности и загазованности, где недопустимо использование респираторов.
+            </a></li>
+
+  </ul>
+</div>
+
+                        <br>
+<h3 class="post-title"> СМЕННЫЕ ФИЛЬТРЫ, ПАТРОНЫ, КОРОБКИ ДЛЯ ПОЛУМАСОК И МАСОК</h3>
+<p style="white-space: pre-wrap;">Фильтрующе-поглощающие коробки, предназначенные для использования с полными лицевыми масками с <b>байонетным креплением,</b> должны:
+• иметь малый вес, плоскую форму, высокую эффективность, комфорт и безопасность при длительных и трудоемких работах;
+• пластиковый корпус, исключающий возможность контакта с загрязненным фильтрующим элементом, при снятии /установке фильтра на маску;
+• иметь возможность комбинации газовых фильтров с противоаэрозольными предфильтрами.
+
+<b>ВАЖНО!</b> Полумаски и маски со сменными патронами, фильтрами и предфильтрами не предназначены для использования в атмосферах, содержащих менее 18% кислорода.
+
+Фильтрующе-поглощающие коробки, предназначенные для использования с полными лицевыми масками <b>с резьбовым соединением</b>, должны:
+· иметь малый вес, высокую эффективность, комфорт и безопасность при длительных и трудоемких работах;
+· обладать большой задерживающей способностью при защите от твердых и жидких частиц, ядовитых веществ;
+· иметь нержавеющий алюминиевый корпус (при случайных деформациях на алюминиевом корпусе отчетливо видны следы, что может означать нарушение фильтрующего слоя и необходимость замены фильтра);
+· обеспечивать длительный ресурс в условиях больших концентраций вредных веществ.
+
+<b>Замена фильтра:</b>
+· противогазовые фильтры подлежат замене, как только чувствуется запах в подмасочном пространстве;
+· если вредное вещество не имеет запаха, то необходимо использовать фильтр с индикатором;
+· противоаэрозольные фильтры подлежат замене, при ощутимом увеличении затруднения дыхания.
+</p>
+
+                        <br>
+<h2 class="post-title"> <a name="concepts4"></a>Шланговые противогазы</h2>
+
+<p style="white-space: pre-wrap;"><b>Шланговая система (противогаз) включает в себя:</b>
+• маску, изготовленную из термопластика, выдерживающего высокие температуры, или из силикона
+• дыхательную трубку
+• пояс с соединительным элементом
+• шланг:
+    - от 9 до 18м при использовании без воздуходувки
+    - до 54м при использовании с воздуходувкой
+
+• Воздуходувки могут питаться от напряжения 12В постоянного тока, 110В и 240В переменного тока;
+• Производительность воздуходувки – 120 л/мин на одного человека;
+• Может использоваться для одного или двух человек. Режим работы для одного или двух человек устанавливается переключателем;
+• Интервал температур: -400˚С до +400˚С.
+</p>
+
+       <a name="events9"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton9" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Назначение
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton9">
+    <li><a class="dropdown-item" href="#events9" style="white-space: break-spaces;">• для защиты органов дыхания, глаз и кожи лица от воздействия вредных примесей в воздухе независимо от их концентрации
+• Также для работы в условиях недостатка кислорода в воздухе рабочей зоны
+    </a></li>
+  </ul>
+</div>
+
+                        <br>
+<h2 class="post-title"> <a name="concepts5"></a>Изолирующие СИЗ</h2>
+
+<p style="white-space: pre-wrap;"><b>Дыхательные аппараты со сжатым воздухом включают в себя:</b>
+• лицевую часть (маску, изготовленную из термопластика, выдерживающего высокие температуры, или из силикона)
+• легочный автомат
+• редуктор
+• баллон со сжатым воздухом
+• подвесная система (ложемент)
+• манометр
+• сигнальное устройство по понижению давления
+
+• Баллоны со сжатым воздухом могут быть выполнены из стали или из композитных материалов, объемом от 2-х до 9-ти литров. Рабочее давление баллонов 300 кгс/см<sup>2</sup>
+• Интервал температур: -40˚С до +60˚С
+<b>ВАЖНО!</b> В случае необходимости дыхательные аппараты должны применяться только с костюмами химической защиты того же производителя.
+
+</p>
+       <a name="events10"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton10" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Назначение
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton10">
+    <li><a class="dropdown-item" href="#events10" style="white-space: break-spaces;">• При аварийно-спасательных работах при ликвидации аварий, пожаров и других чрезвычайных ситуаций
+• При проведении обслуживания и осмотров оборудования, содержащего высокотоксичные продукты (сероводород и др.)
+    </a></li>
+  </ul>
+</div>
+
+                        <br>
+<h2 class="post-title"> <a name="concepts6"></a>Самоспасатели</h2>
+
+       <a name="events11"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton11" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Компактный эвакуационный мини-фильтр с загубником и носовым зажимом
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton11">
+    <li><a class="dropdown-item" href="#events11" style="white-space: break-spaces;">• В упакованном виде должны занимать мало места и быть удобными для постоянного ношения с собой или хранения вблизи рабочего места
+• В упакованном виде выдерживать длительное хранение и быть пригодными к немедленному использованию
+    </a></li>
+  </ul>
+</div>
+
+       <a name="events12"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton12" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Эвакуационная маска с капюшоном
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton12">
+    <li><a class="dropdown-item" href="#events12" style="white-space: break-spaces;">· Комплект состоит из капюшона, полумаски, клапана выдоха, фильтра и оголовья
+· Вес комплекта не должен превышать 550г
+· Максимальное время защитного действия по Р2, СО, SO2, H2S, HCN не менее15 мин
+· Материал должен сохранять защитные свойства при моментальном касании до 1000С
+    </a></li>
+  </ul>
+</div>
+
+       <a name="events13"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton13" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Назначение самоспасателей
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton13">
+    <li><a class="dropdown-item" href="#events13" style="white-space: break-spaces;">Применяются для защиты органов дыхания от вредного воздействия оксида углерода и аэрозолей различной природы (пыль, дым, сажа) при выходе рабочих из задымленных пространств во время пожара.
+    </a></li>
+  </ul>
+</div>
+
+                        <br>
+
+                         <a href="{% url 'studyapp:topic_4_2' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">Тема 2. Средства индивидуальной защиты головы</a>
+                         <a href="{% url 'studyapp:topics_d' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">К выбору темы</a>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

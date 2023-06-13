@@ -1,0 +1,263 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 150px; padding-bottom: 100px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+                    <div style="width: 100%">
+                        <div class="post-heading">
+                            <h4>Электронный курс</h4>
+                            <h2>Г. Средства индивидуальной защиты</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="position: fixed; left: 10px; width: 20%;">
+  Вспомогательное меню по теме
+</a>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Обучение охране труда</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <b>Г. Средства индивидуальной защиты</b>
+    </div>
+    <div class="dropdown mt-6">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;  width: 100%;">
+Выбрать тему
+      </button>
+
+
+              <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_1' %}" style="white-space: pre-wrap;">Тема 1. Средства индивидуальной защиты органов дыхания (СИЗОД)</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_2' %}" style="white-space: pre-wrap;">Тема 2. Средства индивидуальной защиты головы</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_3' %}" style="white-space: pre-wrap;">Тема 3. Средства индивидуальной защиты органов слуха</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_4' %}" style="white-space: pre-wrap;">Тема 4. Средства индивидуальной защиты глаз</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_5' %}" style="white-space: pre-wrap;">Тема 5. Средства индивидуальной защиты кожи</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_6' %}" style="white-space: pre-wrap;">Тема 6. Средства индивидуальной защиты рук</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_7' %}" style="white-space: pre-wrap;">Тема 7. Средства индивидуальной защиты от падения</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_8' %}" style="white-space: pre-wrap;">Тема 8. Специальная обувь</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_9' %}" style="white-space: pre-wrap;">Тема 9. Специальная одежда</a></li>
+      </ul>
+
+
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;">
+        Тема 3. Средства индивидуальной защиты органов слуха
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#concepts1" style="white-space: pre-wrap;">1. Противошумные вкладыши</a></li>
+        <li><a class="dropdown-item" href="#concepts2" style="white-space: pre-wrap;">2. Противошумные наушники</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts1"></a>Противошумные вкладыши</h2>
+
+
+<a name="events1"></a>
+                         <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px;">
+Требования стандарта
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#events1" style="white-space: break-spaces;"><b>Противошумные вкладыши должны:</b>
+• иметь овальную форму и легко принимать форму ушного канала;
+• не вызывать раздражение;
+• быть водоустойчивыми;
+• иметь возможность использования одновременно с другими средствами индивидуальной защиты;
+• акустическая эффективность (SNR) – не менее 24 дБ.
+    </a></li>
+  </ul>
+</div>
+
+       <a name="events2"></a>
+
+                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Виды вкладышей
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item" href="#events2" style="white-space: break-spaces;">- Без шнура;
+- Со шнуром;
+- На оголовье;
+- В футляре.
+    </a></li>
+
+  </ul>
+</div>
+
+       <a name="events3"></a>
+                                                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Назначение
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+    <li><a class="dropdown-item" href="#events3" style="white-space: break-spaces;">• Работы в зоне, где использование средств защиты органов слуха обязательно (обозначенной табличками).
+• Особые виды работ, при выполнении которых уровень воздействия шума превышает 80дБ (А), например, при работе станков, пневматического молотка, электропилы, при ударах о железо в цехе, шлифовке и т.д.
+    </a></li>
+  </ul>
+</div>
+
+       <br>
+                                               <h2 class="post-title"> <a name="concepts2"></a>Противошумные наушники</h2>
+
+
+       <a name="events4"></a>
+
+                                                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Требования стандарта
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+    <li><a class="dropdown-item" href="#events4" style="white-space: break-spaces;"><b>Наушники с чашками из ударопрочного пластика:</b>
+• конструкция должна обеспечивать плотное прилегание изолирующих валиков;
+• постоянное усилие прижатия оголовья в диапазоне 9-12Н;
+• отсутствие давления наголову;
+• регулировку положения чашек наушников;
+• максимальное пространство для ушных раковин внутри чашек;
+• различение человеческой речи;
+• средняя акустическая эффективность (SNR) – не менее 24 дБ.
+    </a></li>
+  </ul>
+</div>
+
+       <a name="events5"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Выбор наушников
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+    <li><a class="dropdown-item" href="#events5" style="white-space: break-spaces;">
+        <table width="100%" cellspacing="0" cellpadding="5" border="1" align="right">
+        <tr style="background: #b0e0e6;">
+            <td align="center" style="border: 1px solid black;"><b>Уровень шума</b></td>
+            <td align="center" style="border: 1px solid black;"><b>Частотный диапазон</b></td>
+            <td align="center" style="border: 1px solid black;"><b>Акустическая эффективность наушников (SNR)</b></td>
+            <td align="center" style="border: 1px solid black;"><b>Область применения</b></td>
+        </tr>
+
+        <tr>
+            <td align="center" style="border: 1px solid black;">Повышенный 83 – 95 дБ</td>
+            <td align="center" style="border: 1px solid black;">Высокие (H) 2-8 кГц</td>
+            <td align="center" style="border: 1px solid black;">24-30 дБ</b></td>
+            <td style="border: 1px solid black;">• Металлорежущие станки
+• Ручной электропневмо- инструмент
+• Бензопила, электропила
+• Легкая тракторная техника</td>
+        </tr>
+
+        <tr>
+            <td align="center" style="border: 1px solid black;">Высокий 95 – 105 дБ</td>
+            <td align="center" style="border: 1px solid black;">Высокие (H) 2-8 кГц
+Средние (M) 0,5-1 кГц</td>
+            <td align="center" style="border: 1px solid black;">31-33 дБ</b></td>
+            <td style="border: 1px solid black;">• Тяжелая дорожно- строительная техника
+• Отбойные молотки
+• Гражданская авиация</td>
+        </tr>
+
+        <tr>
+            <td align="center" style="border: 1px solid black;">Экстремально высокий 98 – 120 дБ</td>
+            <td align="center" style="border: 1px solid black;">Высокие(H) 2-8 кГц
+Средние(M) 0,5-1 кГц
+Низкие(L) 0,125-0,25кГ</td>
+            <td align="center" style="border: 1px solid black;">34-35 дБ</b></td>
+            <td style="border: 1px solid black;">• Работа двигателей реактивных самолетов
+• Тяжелые камнедробильные машины
+• Компрессорные станции
+• Машинные отделения судов</td>
+        </tr>
+    </table>
+    </a></li>
+  </ul>
+</div>
+
+       <a name="events6"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Виды наушников
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+    <li><a class="dropdown-item"  href="#events6" style="white-space: break-spaces;">Противошумные наушники со стандартным оголовьем;
+Противошумные наушники c креплением на каску;
+Противошумные наушники с активной защитой.
+    </a></li>
+  </ul>
+</div>
+
+       <a name="events7"></a>
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Эффективное использование
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton7">
+    <li><a class="dropdown-item" href="#events7" style="white-space: break-spaces;">Чашка наушника должна <b>полностью и плотно перекрывать ушную раковину.</b>
+
+При отвердении или повреждении изолирующего валика чашки наушника нужно производить <b>замену</b> изолирующего комплекта – противошумовой прокладки и валика.
+    </a></li>
+  </ul>
+</div>
+
+
+
+
+
+
+                        <br>
+<div><a href="{% url 'studyapp:topic_4_2' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 2. Средства индивидуальной защиты головы</a>
+                         <a href="{% url 'studyapp:topic_4_4' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 4. Средства индивидуальной защиты глаз</a>
+                        </div>
+
+                        <br>
+                         <a href="{% url 'studyapp:topics_d' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">К выбору темы</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

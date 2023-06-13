@@ -1,0 +1,244 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 150px; padding-bottom: 100px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+                    <div style="width: 100%">
+                        <div class="post-heading">
+                            <h4>Электронный курс</h4>
+                            <h2>Г. Средства индивидуальной защиты</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="position: fixed; left: 10px; width: 20%;">
+  Вспомогательное меню по теме
+</a>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Обучение охране труда</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <b>Г. Средства индивидуальной защиты</b>
+    </div>
+    <div class="dropdown mt-6">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;  width: 100%;">
+Выбрать тему
+      </button>
+
+
+              <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_1' %}" style="white-space: pre-wrap;">Тема 1. Средства индивидуальной защиты органов дыхания (СИЗОД)</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_2' %}" style="white-space: pre-wrap;">Тема 2. Средства индивидуальной защиты головы</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_3' %}" style="white-space: pre-wrap;">Тема 3. Средства индивидуальной защиты органов слуха</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_4' %}" style="white-space: pre-wrap;">Тема 4. Средства индивидуальной защиты глаз</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_5' %}" style="white-space: pre-wrap;">Тема 5. Средства индивидуальной защиты кожи</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_6' %}" style="white-space: pre-wrap;">Тема 6. Средства индивидуальной защиты рук</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_7' %}" style="white-space: pre-wrap;">Тема 7. Средства индивидуальной защиты от падения</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_8' %}" style="white-space: pre-wrap;">Тема 8. Специальная обувь</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_9' %}" style="white-space: pre-wrap;">Тема 9. Специальная одежда</a></li>
+      </ul>
+
+
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;">
+        Тема 7. Средства индивидуальной защиты от падения
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#concepts1" style="white-space: pre-wrap;">1. Обязанности работодателя</a></li>
+        <li><a class="dropdown-item" href="#concepts2" style="white-space: pre-wrap;">2. Нормативные требования</a></li>
+        <li><a class="dropdown-item" href="#concepts3" style="white-space: pre-wrap;">3. Система обеспечения безопасности на высоте</a></li>
+        <li><a class="dropdown-item" href="#concepts4" style="white-space: pre-wrap;">4. Применение систем обеспечения безопасности на высоте</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts1"></a>Обязанности работодателя</h2>
+<p style="white-space: pre-wrap;"><b>Работодатель</b> в соответствии с нормативными выдачи СИЗ и на основании результатов оценки условий труда <b>обеспечивает работника системой обеспечения безопасности работ на высоте,</b> объединяя в качестве элементов, компонентов или подсистем совместимые СИЗ от падения с высоты.
+</p>
+
+                    <br>
+                                               <h2 class="post-title"> <a name="concepts2"></a>Нормативные требования</h2>
+
+<p style="white-space: pre-wrap;"><b>Системы обеспечения безопасности работ на высоте должны:</b>
+• соответствовать существующим условиям на рабочих местах, характеру и виду выполняемой работы;
+• учитывать эргономические требования и состояние здоровья работника;
+• после необходимой подгонки соответствовать полу, росту и размерам работника.
+</p>
+
+<a name="events1"></a>
+                         <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+КЛАССИФИКАЦИЯ СИСТЕМ ОБЕСПЕЧЕНИЯ БЕЗОПАСНОСТИ НА ВЫСОТЕ
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#events1" style="white-space: break-spaces;">• удерживающие системы
+• системы позиционирования
+• страховочные системы
+• системы спасения и эвакуации
+    </a></li>
+  </ul>
+</div>
+
+                    <br>
+                                               <h2 class="post-title"> <a name="concepts3"></a>Система обеспечения безопасности на высоте</h2>
+
+<p style="white-space: pre-wrap;">Состав системы обеспечения безопасности на высоте:
+</p>
+
+       <a name="events2"></a>
+
+                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Анкерное устройство
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item" href="#events2" style="white-space: break-spaces;"><b>Анкерное устройство:</b> конструкция из элементов, включающая одну или несколько анкерных точек или мобильных анкерных точек, которая также может включать элементы крепления, предназначенная для использования в качестве части системы индивидуальной защиты от падения с высоты с возможностью отсоединения от структуры и использования в качестве части анкерной системы.
+
+Класс А - постоянные анкерные устройства:
+• Класс А1 – для крепления к вертикальным, горизонтальным и наклонным поверхностям
+• Класс А2 – для крепления к наклонным крышам
+
+Класс В – переносные временные анкерные устройства
+
+Класс C – гибкие горизонтальные анкерные линии.
+<img class="logo__image" src="{% static 'image/anker_c.png' %}">
+1 - концевой структурный анкер;
+2 – промежуточный структурный анкер;
+3 - точка мобильного анкерного крепления;
+4 - анкерная линия
+
+Класс D – жесткие горизонтальные анкерные линии.
+<img class="logo__image" src="{% static 'image/anker_D1.png' %}">
+1 - жесткая направляющая анкерного крепления;
+2 - точка мобильного анкерного крепления
+
+<img class="logo__image" src="{% static 'image/anker_D2.png' %}">
+1 - крайний или промежуточный анкер;
+2 - мобильная точка крепления;
+3 - неподвижная деталь жесткой анкерной линии;
+4 - жесткая анкерная линия
+
+Класс E – анкерные устройства с противовесом.
+    </a></li>
+
+  </ul>
+</div>
+
+       <a name="events3"></a>
+                                                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Страховочная привязь
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+    <li><a class="dropdown-item" href="#events3" style="white-space: break-spaces;">EN 358 (Для удержания и позиционирования)
+EN 361
+EN 358+EN 361 (для работ с использованием системы позиционирования)
+EN 361 + EN 813 + EN 358 (для работ в положении сидя, а также для работ с использованием системы позиционирования)
+
+Сравнительная таблица
+<img class="logo__image" src="{% static 'image/privyaz.png' %}">
+
+    <object ><a href="{% static 'documents/Note_strah_privyaz.pdf' %}" download="newname.docx">Алгоритм надевания страховочной привязи</a></object>
+    </a></li>
+  </ul>
+</div>
+
+       <a name="events4"></a>
+                                                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Соединительно-амортизирующая подсистема
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+    <li><a class="dropdown-item" href="#events4" style="white-space: break-spaces;"><b>Стропы для остановки падения (страховочные)</b>
+<b>Стропы (ЕN 354)</b>
+• Текстильные:
+    - Регулируемые;
+    - Нерегулируемые.
+• Тросовые
+• Цепные
+<b>Длина стропа не должна превышать 2 м.</b>
+
+<b>Стропы для предотвращения падения (удерживающие)</b>
+<b>Стропы (ЕN 354)</b>
+• Текстильные:
+    - Регулируемые;
+    - Нерегулируемые.
+• Тросовые
+• Цепные
+
+<b>Средства защиты ползункового типа на гибкой анкерной линии (ЕН 353-2)</b>
+
+<b>Средства защиты втягивающего типа (EH360)</b>
+• Тип троса
+• Герметичность
+• Наличие эвакуации
+• Длина троса
+
+<b>Соединительные элементы (ЕН 362)</b>
+Базовый (тип В):
+• Нагрузка по большой оси: ~ 22 кН
+• Нагрузка по малой оси: ~ 7 кН
+• Нагрузка с открытой защелкой: ~ 7 кН
+Универсальный (тип М)
+Анкерный (тип А)
+Завинчивающийся (тип Q)
+Конечный (тип T)
+    </a></li>
+  </ul>
+</div>
+
+       <br>
+                                               <h2 class="post-title"> <a name="concepts4"></a>Применение систем обеспечения безопасности на высоте</h2>
+
+<p style="white-space: pre-wrap;"><b>Системы обеспечения безопасности работ на высоте предназначены:</b>
+• для удерживания работника таким образом, что падение
+с высоты предотвращается (системы удерживания или позиционирования)
+• для безопасной остановки падения (страховочная система) и уменьшения тяжести последствий остановки падения
+• для спасения и эвакуации
+</p>
+
+
+                        <br>
+<div>
+       <a href="{% url 'studyapp:topic_4_6' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 6. Средства индивидуальной защиты рук</a>
+       <a href="{% url 'studyapp:topic_4_8' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 8. Специальная обувь</a>
+</div>
+
+                        <br>
+                         <a href="{% url 'studyapp:topics_d' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">К выбору темы</a>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

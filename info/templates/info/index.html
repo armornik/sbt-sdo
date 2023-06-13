@@ -1,0 +1,57 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+ <!-- Page Header-->
+        <header class="masthead" style="background-image: url({% static 'assets/img/home-bg.jpg' %});">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Охрана труда</h1>
+                            <span class="subheading">Развитие технологий повышения безопасности труда, создание условий работы для сотрудников с минимальными рисками для их жизни и здоровья, оптимизация внутренних процессов управления безопасностью труда</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                  <p class="post-meta">  Добро пожаловать {{ user.first_name }} {{ user.last_name }} на учебный портал СБТ!
+Здесь вы найдете лучшие инструменты для развития своих навыков и компетенций,
+повышения эффективности своей работы в области охраны труда. Желаем удачи! </p>
+
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <h2 class="post-title">Текущие дела</h2>
+                        <a href="{% url 'info:studying' %}">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td><div><img class="logo__image"
+                                                                        src="{%static 'assets/img/home-bg.jpg' %}" style="width: 100%;" border="0"/></div></td>
+    <!--							<td><div class="username" onclick='fnToggleDropdown(this, true)'><a href="javascript:void(0)">Корявый Виталий Викторович</a></div></td>-->
+
+    <!--							<td><div class="button-dropdown" onclick='fnToggleDropdown(this, true)'></div></td>-->
+
+    <!--							<td><div class="exit-button-container"><a href="javascript:void(0)" onclick="fnLogout()" title="Выход"><i class="icon-sign-out-ico  icon-2x"></i></a></div></td>-->
+
+                            </tr>
+                        </table>
+
+
+
+                           <h4 class="post-subtitle">Охрана труда с изменениями от сентября 2022г.</h4>
+
+                            <p class="post-meta">
+                                Пройти электронный курс
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

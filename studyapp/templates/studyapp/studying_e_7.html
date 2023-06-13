@@ -1,0 +1,134 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 150px; padding-bottom: 100px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+                    <div style="width: 100%">
+                        <div class="post-heading">
+                            <h4>Электронный курс</h4>
+                            <h2>Оказание первой помощи пострадавшим</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="position: fixed; left: 10px; width: 20%;">
+  Вспомогательное меню по теме
+</a>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Обучение охране труда</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <b>Оказание первой помощи пострадавшим</b>
+    </div>
+    <div class="dropdown mt-6">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;  width: 100%;">
+Выбрать тему
+      </button>
+
+
+              <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_0' %}" style="white-space: pre-wrap;">Введение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_1' %}" style="white-space: pre-wrap;">Тема 1. Кровотечение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_2' %}" style="white-space: pre-wrap;">Тема 2. Ушиб и растяжение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_3' %}" style="white-space: pre-wrap;">Тема 3. Сердечный приступ (инфаркт)</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_4' %}" style="white-space: pre-wrap;">Тема 4. Ожоги</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_5' %}" style="white-space: pre-wrap;">Тема 5. Потеря сознания (обморок)</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_6' %}" style="white-space: pre-wrap;">Тема 6. Перелом позвоночника</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_7' %}" style="white-space: pre-wrap;">Тема 7. Инсульт</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_8' %}" style="white-space: pre-wrap;">Тема 8. Электротравма</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_9' %}" style="white-space: pre-wrap;">Тема 9. Перелом</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_10' %}" style="white-space: pre-wrap;">Тема 10. Отравление</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_11' %}" style="white-space: pre-wrap;">Тема 11. Отморожение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_12' %}" style="white-space: pre-wrap;">Тема 12. Ранения</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_13' %}" style="white-space: pre-wrap;">Тема 13. Травмы</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_14' %}" style="white-space: pre-wrap;">Тема 14. Ампутация</a></li>
+      </ul>
+
+
+
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;">
+        Тема 7. Инсульт
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#concepts1" style="white-space: pre-wrap;">1. Симптомы</a></li>
+        <li><a class="dropdown-item" href="#concepts2" style="white-space: pre-wrap;">2. Тест на выявление первых симпомов при инсульте</a></li>
+        <li><a class="dropdown-item" href="#concepts2" style="white-space: pre-wrap;">3. Алгоритм действий</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts1"></a>Симптомы</h2>
+
+<p style="white-space: pre-wrap;">• онемение, слабость или паралич руки, ноги, половины тела
+• перекашивание лица, слюнотечение на одной стороне
+• нарушение речи до полной ее потери
+• ухудшение или потеря зрения, двоение в глазах, расфокусировка зрения, разный размер зрачков
+• затруднения дыхания или глотания
+• головокружение, нарушение координации
+• острая головная боль
+• общая слабость, нарушение сознания
+• неконтролируемое мочеиспускание или дефекация
+</p>
+                                              <h2 class="post-title"> <a name="concepts2"></a>Тест УЗП на выявление первых симпомов при инсульте</h2>
+
+<p style="white-space: pre-wrap;"><b>У</b> – попросите больного улыбнуться. При начальной стадии инсульта улыбка у больного будет «кривой» или «перекошенной».
+<b>З</b> – попросите больного заговорить с Вами. В прединсультном состоянии речь больного становится невнятной. Ее можно сравнить с речью очень пьяного человека.
+<b>П</b> – попросите больного одновременно поднять обе руки вверх. Конечно же, если больной будет в состоянии это сделать. Рука с пораженной стороны тела будет поднята значительно ниже, чем другая. В любом случае уровень расположения будет неодинаковым.
+</p>
+                                              <h2 class="post-title"> <a name="concepts3"></a>Алгоритм действий</h2>
+
+<p style="white-space: pre-wrap;">1. Вызвать скорую медицинскую помощь.
+2. Если больной в сознании, придать ему удобное сидячее или полусидячее положение, постараться успокоить, приободрить.
+3. Расстегнуть стесняющую одежду, ослабить галстук и поясной ремень, обеспечить <b>доступ свежего воздуха,</b> максимальный <b>покой.</b>
+4. Положить на лоб и голову холод, к ногам - грелки.
+5. <b>Не давать есть и пить.</b>
+6. Если есть возможность, измерить больному <b>давление.</b> Если оно выше 220 мм. рт. ст, дать больному лекарство, которое он обычно принимает для понижения артериального давления (при сохранности функции глотания) (лекарственные препараты дает только медицинский работник).
+7. Если больной без сознания, положить <b>на бок</b> в устойчивое положение, убедиться, что больной <b>дышит.</b>
+8. <b>Не оставлять больного</b> без присмотра, следить за изменениями в его состоянии.
+9. При остановке дыхания и сердечной деятельности приступить к сердечно-легочной реанимации (СЛР).
+</p>
+
+                        <br>
+  <div>
+                                                <a href="{% url 'studyapp:topic_5_6' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 6. Перелом позвоночника</a>
+                                                <a href="{% url 'studyapp:topic_5_8' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 8. Электротравма</a>
+</div>
+
+                        <br>
+      <a href="{% url 'studyapp:topics_e' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">К выбору темы</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

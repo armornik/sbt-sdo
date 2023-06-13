@@ -1,0 +1,417 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 150px; padding-bottom: 100px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+                    <div style="width: 100%">
+                        <div class="post-heading">
+                            <h4>Электронный курс</h4>
+                            <h2>А. Обучение по общим вопросам охраны труда и функционирования системы управления охраной труда</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="position: fixed; left: 10px; width: 20%;">
+  Вспомогательное меню по теме
+</a>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Обучение охране труда</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <b>А. Обучение по общим вопросам охраны труда и функционирования системы управления охраной труда</b>
+    </div>
+
+    <div class="dropdown mt-6">
+
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;  width: 100%;">
+Выбрать тему
+      </button>
+
+
+              <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_1_1' %}" style="white-space: pre-wrap;">Тема 1. Основы охраны труда в Российской Федерации</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_1_2' %}" style="white-space: pre-wrap;">Тема 2. Система управления охраной труда в организации</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_1_3' %}" style="white-space: pre-wrap;">Тема 3. Стратегия безопасности труда и охраны здоровья</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_1_4' %}" style="white-space: pre-wrap;">Тема 4. Расследование и предупреждение несчастных случаев и профессиональных заболеваний</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_1_5' %}" style="white-space: pre-wrap;">Тема 5. Организация оказания первой помощи</a></li>
+      </ul>
+
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;">
+        Тема 3. Стратегия безопасности труда и охраны здоровья
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#concepts" style="white-space: pre-wrap;">1. Обязанности, ответственность и полномочия в сфере охраны труда</a></li>
+        <li><a class="dropdown-item" href="#concepts1" style="white-space: pre-wrap;">2. Лидерство в области охраны труда</a></li>
+        <li><a class="dropdown-item" href="#concepts2" style="white-space: pre-wrap;">3. Мотивация работников на безопасный труд</a></li>
+      </ul>
+
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap; width: 100%;">
+        Полезные документы
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% static 'documents/O_normativnykh_aktakh.docx' %}" download="newname.docx">О нормативных актах</a></li>
+        <li><a class="dropdown-item" href="{% static 'documents/Nakazaniya_za_narusheniya_v_oblasti_OT.docx' %}" download="newname.docx">О наказаниях за нарушения</a></li>
+        <li><a class="dropdown-item" href="{% static 'documents/Pravovye_Istochniki.docx' %}" download="newname.docx">Правовые источники</a></li>
+        <li><a class="dropdown-item" href="{% static 'documents/Osnovnyye_polozheniya_trudovogo_prava.pdf' %}" download="newname.docx">Основные положения трудового права</a></li>
+        <li><a class="dropdown-item" href="{% static 'documents/Pravo_rabotnikov_na_okhranu_truda.docx' %}" download="newname.docx" style="white-space: pre-wrap;">Права и гарантии прав работников на охрану труда</a></li>
+        <li><a class="dropdown-item" href="{% static 'documents/Funktsii_i_polnomochiya_organov_vlasti_v_oblasti_OT.docx' %}" download="newname.docx" style="white-space: pre-wrap;">Функции и полномочия органов власти в области ОТ</a></li>
+        <li><a class="dropdown-item" href="{% static 'documents/Socialnoe_partnerstvo_rabotodatelya_i_rabotnikov.docx' %}" download="newname.docx" style="white-space: pre-wrap;">Социальное партнерство работодателя и работников</a></li>
+        <li><a class="dropdown-item" href="{% static 'documents/Organizaciya_sistemy_upravleniya_OT.docx' %}" download="newname.docx" style="white-space: pre-wrap;">Организация системы управления ОТ</a></li>
+        <li><a class="dropdown-item" href="{% static 'documents/Specialnaya_ocenka_uslovij_truda.docx' %}" download="newname.docx" style="white-space: pre-wrap;">Специальная оценка условий труда</a></li>
+        <li><a class="dropdown-item" href="{% static 'documents/Predostavlenie_kompensacij_za_usloviya_truda.docx' %}" download="newname.docx" style="white-space: pre-wrap;">Предоставление компенсаций за условия труда, обеспечение работников средствами индивидуальной защиты</a></li>
+        <li><a class="dropdown-item" href="{% static 'documents/Osnovy_preduprezhdeniya_prof_zabolevaemosti.docx' %}" download="newname.docx" style="white-space: pre-wrap;">Основы предупреждения профессиональной заболеваемости</a></li>
+        <li><a class="dropdown-item" href="{% static 'documents/Organizaciya_Dnya_ohrany_truda.docx' %}" download="newname.docx" style="white-space: pre-wrap;">Организация дня охраны труда на производстве</a></li>
+        <li><a class="dropdown-item" href="{% static 'documents/Znaki_bezopasnosti_po_GOST_12.4.026-2015.docx' %}" download="newname.docx" style="white-space: pre-wrap;">Знаки безопасности</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts"></a>ОБЯЗАННОСТИ, ОТВЕТСТВЕННОСТЬ И ПОЛНОМОЧИЯ В СФЕРЕ ОХРАНЫ ТРУДА</h2>
+
+<p style="white-space: pre-wrap;">Каждая организация должна иметь четкую политику управления в области охраны труда, чтобы все, кто связан с организацией, знали о ее целях и задачах в области охраны здоровья и безопасности и о том, как они должны быть достигнуты.
+</p>
+
+<br>
+
+                        <h2 class="post-title"><a name="concepts1"></a>ЛИДЕРСТВО В ОБЛАСТИ ОХРАНЫ ТРУДА</h2>
+
+<p style="white-space: pre-wrap;">Руководители являются ключевыми лицами в организации, которые разрабатывают и улучшают условия труда и таким образом влияют на здоровье подчиненных. Они планируют, возглавляют, координируют и контролируют организацию труда и трудовую деятельность.
+
+Они также оказывают большое влияние на общие требования к работе, контроль и социальную поддержку, которые, как известно, сильно влияют на состояние работников.
+
+Соответственно, именно они в первую очередь влияют на условия труда и принимают решения об изменениях на рабочем месте и в рабочей среде. Все эти моменты вносят свой вклад в определение уровня безопасности и здоровья на рабочем месте.
+
+Лидеры устанавливают стандарты и ценности в организации и обладают полномочиями для обеспечения соблюдения требований безопасности.
+</p>
+<br>
+                        <h2 class="post-title"><a name="concepts2"></a>МОТИВАЦИЯ РАБОТНИКОВ НА БЕЗОПАСНЫЙ ТРУД</h2>
+                        <br>
+                        <h3 class="post-title">УПРАВЛЕНИЕ МОТИВАЦИЕЙ РАБОТНИКОВ НА БЕЗОПАСНЫЙ ТРУД</h3>
+
+<p style="white-space: pre-wrap;">Пропаганда в области охраны труда — одно из основных направлений работы, которое способствует улучшению состояния условий и охраны труда работников организаций, снижению уровня производственного травматизма и профессиональных заболеваний.
+</p>
+<br>
+                        <h3 class="post-title">ЗАДАЧИ И ИНСТРУМЕНТЫ ПРОПАГАНДЫ В ОБЛАСТИ ОТ</h3>
+
+<p style="white-space: pre-wrap;">Пропаганда охраны труда - это информационное и эмоциональное воздействие на работающих с целью развить у них качества, способствующие безопасной работе.</p>
+
+
+<a name="events1"></a>
+
+                                                                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: break-spaces;">
+Задачи пропаганды
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#events1"  style="white-space: break-spaces;">• ознакомление работников организаций с теми мероприятиями, которые проводят федеральные законодательные и исполнительные власти и органы управления для улучшения состояния условий и охраны труда
+• пропаганда технических знаний в области охраны труда
+• обобщение и распространение передового опыта, достижений науки и техники в области охраны труда
+• доведение до сознания каждого работника значения создания благоприятных условий труда и необходимости безусловного выполнения всех норм и требований охраны труда и производственной санитарии
+    </a></li>
+  </ul>
+</div>
+
+
+<a name="events2"></a>
+
+                                                                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: break-spaces;">
+Инструменты пропаганды
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item" href="#events2"  style="white-space: break-spaces;">• демонстрация научно-популярных и учебных кинофильмов по правилам безопасности, производственной санитарии, технической эстетике и другим вопросам
+• проведение лекций, докладов и бесед
+• информирование об издании новых книг и плакатов
+• организация периодических выставок
+• использование корпоративного радиовещания, стенных газет, стендов охраны труда
+    </a></li>
+  </ul>
+</div>
+                        
+
+<br>
+                        <h3 class="post-title">ЛЕКЦИИ ПО ОХРАНЕ ТРУДА</h3>
+
+<p style="white-space: pre-wrap;">Лекции по охране труда проводятся как по общим, так и по конкретным вопросам. Задача — расширять кругозор слушателей и привлекать внимание к вопросам охраны труда для активизации работы в этой области.
+
+Лекции на темы охраны труда пропагандируют комплекс мероприятий и (или) направлений для улучшения условий труда в организации.
+
+Темы лекций следует излагать с учетом специфических особенностей соответствующего производства, его оборудования, условий труда. На примерах состояния охраны труда и анализа конкретных недостатков стоит давать рекомендации по их устранению. Лекции целесообразно сопровождать показом наглядных пособий: чертежей, схем, плакатов, фотографий.
+
+
+ПРИМЕРЫ ТЕМ ЛЕКЦИЙ:
+• вопросы охраны труда в отдельных производствах
+• меры безопасности на конкретных видах оборудования
+• профилактические меры при работах, связанных с вредностями или повышенной опасностью
+• способы устранения причин производственного травматизма и профессиональных заболеваний
+• вопросы применения спецодежды и других средств индивидуальной защиты
+
+Для чтения лекций часто приглашают сотрудников научно- исследовательских институтов, врачей органов санитарно-эпидемиологического надзора, государственных инспекторов по охране труда, специалистов органов управления охраны труда, инженерно-технических работников предприятий.
+</p>
+
+
+<br>
+                        <h3 class="post-title">ДОКЛАДЫ ПО ОХРАНЕ ТРУДА</h3>
+
+<p style="white-space: pre-wrap;">Основная цель бесед — мобилизовать слушателей на устранение конкретных причин несчастных случаев и профессиональных заболеваний. Беседы должны быть краткими, выразительными, с конкретными примерами.
+
+Целевая аудитория бесед по вопросам охраны труда — работники отдельных подразделений и отделов.
+
+Например, если на участке увеличилось количество случаев падения предметов с высоты, беседа может быть посвящена изложению способов их предупреждения.
+
+ПРИМЕРЫ ТЕМ ДОКЛАДОВ:
+• состояние травматизма в подразделениях или на отдельных видах оборудования с разбором причин и возможных путей их устранения
+• планы оздоровительных мероприятий и мероприятий по охране труда в организации и в отдельных цехах и др.
+</p>
+
+
+<br>
+                        <h3 class="post-title">РЕГУЛЯРНОЕ ИНФОРМИРОВАНИЕ РАБОТНИКОВ</h3>
+
+<p style="white-space: pre-wrap;">Отделам и ответственным за охрану труда необходимо регулярно информировать работников о новых и действующих требованиях охраны труда.
+    1. Для своевременного информирования об опыте работы и новейших достижениях в области охраны труда в организации желательно устраивать небольшие <b>выставки эпизодического характера.</b>
+
+    2. Для пропаганды вопросов охраны труда следует использовать <b>системы коммуникации</b> (электронная почта, рассылки, корпоративное ТВ и тд). Посвящать их отдельным вопросам охраны труда, приводя как положительные, так и отрицательные примеры с соответствующими выводами. По ним можно передавать отдельные извлечения из правил правил охраны трудаи сообщать о последствиях их нарушений.
+
+    3. Еще один канал информирования — корпоративная газета.
+В ней следует:
+• сообщать о причинах травматизма в отдельных подразделениях
+• освещать работу уполномоченных (доверенных) лиц по охране труда, комиссий охраны труда организации
+• помещать описания предложений и изобретений, направленных на улучшение условий труда
+• публиковать материалы и примеры лучших практик в области охраны труда
+Газета должна отражать как положительный опыт, так и недостатки в работе, мобилизуя рабочих, администрацию и общественные организации на устранение недостатков.
+Целесообразно периодически публиковать в газете раздел «Вопросы и ответы по охране труда», включая туда наиболее актуальные вопросы, которыми интересуются работники.
+
+    4. Отличная идея — организовать <b>стенды и уголки по охране труда.</b>
+</p>
+
+
+<br>
+                        <h3 class="post-title">ПРИНЦИПЫ КУЛЬТУРЫ БЕЗОПАСНОСТИ</h3>
+
+<p style="white-space: pre-wrap;"> Организация может мотивировать работников на безопасный труд. Приоритетом для организации является развитие в работниках культуры безопасности и демонстрировать мероприятия и требования охраны труда, направленные на сохранение жизни и здоровья каждого работника организации.
+
+<b>Важно!</b> Осознанная безопасность — инструмент, который позволяет снижать травматизм за счет внутренних качеств работника: знаний, навыков и личного отношения.
+
+Есть три основные принципа, для формирования культуры безопасности в организации:</p>
+
+<a name="events3"></a>
+
+                                                                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px;">
+Нулевой травматизм
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+    <li><a class="dropdown-item" href="#events3"  style="white-space: break-spaces;">Одной из ключевых задач в области охраны труда является сохранение жизни и здоровья каждого работника в процессе трудовой деятельности посредством реализации концепции «нулевого» травматизма.
+
+<b>«Vision Zero» или «Нулевой травматизм»</b> – это качественно новый подход к организации профилактики, объединяющий три направления – безопасность, гигиену труда и благополучие работников на всех уровнях производства.
+
+Разработанная Международной ассоциацией социального обеспечения концепция «Vision Zero» отличается гибкостью и может быть адаптирована к конкретным мерам профилактики, имеющим приоритетное значение для обеспечения безопасности, гигиены труда и благополучия работников на том или ином предприятии.
+
+<b>Семь «золотых правил» концепции «Нулевого травматизма»:</b>
+1. Стать лидером – показать приверженность принципам.
+2. Выявлять угрозы – контролировать риски.
+3. Определять цели – разрабатывать программы.
+4. Создать систему безопасности и гигиены труда – достичь высокого уровня организации.
+5. Обеспечивать безопасность и гигиену на рабочих местах, при работе со станками и оборудованием.
+6. Повышать квалификацию – развивать профессиональные навыки.
+7. Инвестировать в кадры – мотивировать посредством участия.
+    </a></li>
+  </ul>
+</div>
+
+<a name="events4"></a>
+
+                                                                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px;">
+Общие ценности
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+    <li><a class="dropdown-item" href="#events4"  style="white-space: break-spaces;">Каждый работник разделяет общую концепцию нулевого травматизма и следит за соблюдением требований безопасности. Среди работников нет равнодушных к требованиям безопасности.
+
+Выстраивание культуры безопасности среди работников происходит благодаря постоянному и последовательному распространению информационной агитации требований безопасности, доверительным беседам, лекциям и положительному личному примеру каждого руководителя организации.
+</a></li>
+  </ul>
+</div>
+
+<a name="events5"></a>
+                                                                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px;">
+Вовлеченные работники
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+    <li><a class="dropdown-item" href="#events5"  style="white-space: break-spaces;">Каждый работник организации знает как, кому сообщать и вовремя сообщает обо всех ситуациях, инцидентах, авариях, поломках которые могут повлиять или уже повлияли на жизнь и здоровье, и вносить предложения об улучшениях условий и охраны труда в организации, как анонимно, так и в открытом диалоге со своим непосредственным руководителем, или руководителем любого уровня, а также специалистом ответственным за охрану труда.
+    </a></li>
+  </ul>
+</div>
+                                                <br>
+
+      <h3 class="post-title">ИНФОРМАЦИОННАЯ АГИТАЦИЯ НА ТЕМУ ТРЕБОВАНИЙ БЕЗОПАСНОСТИ</h3>
+
+<p style="white-space: pre-wrap;"> Информированность работников в области требований охраны труда мотивирует их на безопасную работу и соблюдение культуры безопасности.
+
+<b>Важно!</b> Информационная агитация — эффективный способ постоянно напоминать работникам про требования охраны труда. Агитация может быть в электронной, письменной или устной формах. Распространенная форма письменной коммуникации — плакаты.
+
+Примеры правил, которые можно разместить на плакатах:</p>
+
+<a name="events6"></a>
+                                                                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px;">
+Для офиса
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton7">
+    <li><a class="dropdown-item" href="#events6"  style="white-space: break-spaces;">•Про телефон: «Не отвлекайся на телефон!»
+• Про еду на рабочем месте: «Не ешь там, где работаешь!»
+• О лестницах: «Держись за перила, чтобы не упасть.»
+• О знаках: «Следи за знаками и высотой каблука!»
+• Про положение тела: «Сегодня сутулишься — завтра идешь к хирургу!»
+• О смартфоне: «Не выходи из реальности.»
+• О запрете курения: «Сегодня покурил в неположенном месте — завтра снова ищешь работу.»
+</a></li>
+  </ul>
+</div>
+
+<a name="events7"></a>
+                                                                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton8" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px;">
+Для производственной площадки
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton8">
+    <li><a class="dropdown-item" href="#events7"  style="white-space: break-spaces;">• Про спецодежду: «Спецодежда бережет твою жизнь!»
+• Про подъем тяжестей: «Поднимай тяжести за счет силы ног, а не спины. Если тяжело, попроси коллег о помощи!»
+• Про опасности: «Папа, береги себя! Мы тебя ждем!»
+• Про работу на высоте: «Береги себя от падения с высоты!»
+• О погрузчиках: «Не меняй минутное веселье на месяцы лечения!»
+• О травмах: «Берегите руки, чтобы держать за руку своих детей.»
+• О касках: «Каска спасает жизни.»
+• О СИЗ: «Вчера повезло, завтра нет. Используй средства индивидуальной защиты.»
+</a></li>
+  </ul>
+</div>
+
+                                 <br>
+
+      <h3 class="post-title">ВИДЫ И НАЗНАЧЕНИЯ ЗНАКОВ БЕЗОПАСНОСТИ</h3>
+
+<p style="white-space: pre-wrap;">Знаки безопасности используют, чтобы предупредить работников об опасности. С их помощью можно управлять рисками и снижать травматизм.
+
+Знаки размещают как на территории производственных площадок, так и в помещениях.
+
+<b>Их делят на группы:</b></p>
+
+    <div style="margin-bottom: 30px;">
+        <a title="Например, знак 'Огнетушитель'"><img src="{% static 'image/Fire_safety.jpg' %}" alt="Пожарная безопасность" height="120px">
+   пожарной безопасности</a>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+        <a title="например, знак 'Выход здесь (левосторонний)'"><img src="{% static 'image/evacuation.jpg' %}" alt="эвакуационные" height="120px">
+   эвакуационные</a>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+        <a title="например, знак 'Пункт приема гигиенических процедур (душевые)'"><img src="{% static 'image/showers.jpg' %}" alt="медицинского и санитарного назначения" height="120px">
+   медицинского и санитарного назначения</a>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+        <a title="например, знак 'Пункт (место) приема пищи'"><img src="{% static 'image/index.jpg' %}" alt="указательные" height="120px">
+   указательные</a>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+        <a title="например, знак 'Запрещается курить'"><img src="{% static 'image/forbidding.jpg' %}" alt="запрещающие" height="120px">
+   запрещающие</a>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+        <a title="например, знак 'Проход здесь'"><img src="{% static 'image/prescriptive.jpg' %}" alt="предписывающие" height="120px">
+   предписывающие</a>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+        <a title="например, знак 'Осторожно. Скользко'"><img src="{% static 'image/stop.jpg' %}" alt="предупреждающие" height="120px">
+   предупреждающие</a>
+    </div>
+
+
+                                                            <br>
+ <h3 class="post-title" >  ПАМЯТКА О ЗНАКАХ БЕЗОПАСНОСТИ</h3>
+<p>Чтобы выбрать знаки безопасности и сигнальную разметку, используйте ГОСТ 12.4.026-2015. В этом стандарте приведены действующие обозначения сигнальных цветов, знаков безопасности и сигнальной разметки для мест, где необходимо обеспечить безопасность.</p>
+
+<p>Больше информации <b>о знаках безопасности,</b> вы узнаете <a href="{% static 'documents/Znaki_bezopasnosti_po_GOST_12.4.026-2015.docx' %}" download="newname.docx">скачав памятку</a>, которую можно также скачать во вкладке «Полезные документы» «Вспомогательного меню по теме» слева экрана.</p>
+<p> <b>О том, как правильно организовать день охраны труда на производстве</b> вы узнаете <a href="{% static 'documents/Organizaciya_Dnya_ohrany_truda.docx' %}" download="newname.docx">скачав эту памятку</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <br>
+
+
+  <div >                       <a href="{% url 'studyapp:topic_1_2' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; height: 100%; display: table-cell; vertical-align: middle">Тема 2. Система управления охраной труда в организации</a>
+
+      <a href="{% url 'studyapp:topic_1_4' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 4. Расследование и предупреждение несчастных случаев и профессиональных заболеваний</a>
+</div>
+
+
+
+                        <br>
+                        <a href="{% url 'studyapp:study_start' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">К выбору темы</a>
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

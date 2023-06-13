@@ -1,0 +1,125 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 150px; padding-bottom: 100px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+                    <div style="width: 100%">
+                        <div class="post-heading">
+                            <h4>Электронный курс</h4>
+                            <h2>Оказание первой помощи пострадавшим</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="position: fixed; left: 10px; width: 20%;">
+  Вспомогательное меню по теме
+</a>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Обучение охране труда</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <b>Оказание первой помощи пострадавшим</b>
+    </div>
+    <div class="dropdown mt-6">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;  width: 100%;">
+Выбрать тему
+      </button>
+
+
+              <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_0' %}" style="white-space: pre-wrap;">Введение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_1' %}" style="white-space: pre-wrap;">Тема 1. Кровотечение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_2' %}" style="white-space: pre-wrap;">Тема 2. Ушиб и растяжение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_3' %}" style="white-space: pre-wrap;">Тема 3. Сердечный приступ (инфаркт)</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_4' %}" style="white-space: pre-wrap;">Тема 4. Ожоги</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_5' %}" style="white-space: pre-wrap;">Тема 5. Потеря сознания (обморок)</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_6' %}" style="white-space: pre-wrap;">Тема 6. Перелом позвоночника</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_7' %}" style="white-space: pre-wrap;">Тема 7. Инсульт</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_8' %}" style="white-space: pre-wrap;">Тема 8. Электротравма</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_9' %}" style="white-space: pre-wrap;">Тема 9. Перелом</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_10' %}" style="white-space: pre-wrap;">Тема 10. Отравление</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_11' %}" style="white-space: pre-wrap;">Тема 11. Отморожение</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_12' %}" style="white-space: pre-wrap;">Тема 12. Ранения</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_13' %}" style="white-space: pre-wrap;">Тема 13. Травмы</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_5_14' %}" style="white-space: pre-wrap;">Тема 14. Ампутация</a></li>
+      </ul>
+
+
+
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;">
+        Тема 3. Сердечный приступ (инфаркт)
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#concepts1" style="white-space: pre-wrap;">1. Симптомы сердечного приступа (инфаркта)</a></li>
+        <li><a class="dropdown-item" href="#concepts2" style="white-space: pre-wrap;">2. Алгоритм действий</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts1"></a>Симптомы сердечного приступа (инфаркта)</h2>
+
+<p style="white-space: pre-wrap;">• интенсивная колющая, сжимающая, давящая или жгучая боль за грудиной, отдающая в левую руку, плечо, шею, под левую лопатку, нижнюю челюсть
+• ощущение тяжести, жжения, давления за грудиной, боль в верхней части живота
+• нарущение дыхания, одышка
+• резкая слабость, головокружение, чувство страха
+• учащение пульса, холодный пот
+• тошнота
+• бледность кожи, посинение губ и ногтей
+</p>
+                                              <h2 class="post-title"> <a name="concepts2"></a>Алгоритм действий</h2>
+
+<p style="white-space: pre-wrap;">1. Вызвать скорую мединскую помощь.
+2. Необходимо <b>прекратить всякую физическую деятельность.</b> Придать больному сидячее или полусидячее положение, наиболее комфортное для него, и постараться успокоить, попросить не двигаться.
+3. Расстегнуть стесняющую одежду, ослабить галстук и поясной ремень, <b>обеспечить доступ свежего воздуха,</b> максимальный <b>покой.</b> Попросить сделать несколько спокойных вдохов.
+4. <b>Не кормить больного, запретить курить.</b>
+5. Допускается дать 1 таблетку 0,25 г аспирина (разжевать и проглотить), если нет на него аллергии (лекарственные препараты дает только медицинский работник).
+6. Допускается дать 1 таблетку 0,5 мг нитроглицерина под язык. Нельзя давать нитроглицерин при резкой слабости, потливости, а также при выраженной головной боли, головокружении, остром нарушении зрения, речи или координации движений (лекарственные препараты дает только медицинский работник).
+7. Если через 5-7 минут после приема аспирина и нитроглицерина боли сохраняются, допускается дать повторно 1 таблетку нитроглицерина под язык (лекарственные препараты дает только медицинский работник).
+8. <b>Не оставлять больного</b> без присмотра, следить за изменениями в его состоянии.
+9. При остановке дыхания и сердечной деятельности приступить к сердечно-легочной реанимации (СЛР).
+</p>
+
+                        <br>
+  <div>
+            <a href="{% url 'studyapp:topic_5_2' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 2. Ушиб и лечение</a>
+            <a href="{% url 'studyapp:topic_5_4' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 4. Ожоги</a>
+</div>
+
+                        <br>
+      <a href="{% url 'studyapp:topics_e' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">К выбору темы</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

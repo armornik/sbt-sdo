@@ -1,0 +1,236 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 150px; padding-bottom: 100px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+                    <div style="width: 100%">
+                        <div class="post-heading">
+                            <h4>Электронный курс</h4>
+                            <h2>Г. Средства индивидуальной защиты</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="position: fixed; left: 10px; width: 20%;">
+  Вспомогательное меню по теме
+</a>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Обучение охране труда</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <b>Г. Средства индивидуальной защиты</b>
+    </div>
+    <div class="dropdown mt-6">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;  width: 100%;">
+Выбрать тему
+      </button>
+
+
+              <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_1' %}" style="white-space: pre-wrap;">Тема 1. Средства индивидуальной защиты органов дыхания (СИЗОД)</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_2' %}" style="white-space: pre-wrap;">Тема 2. Средства индивидуальной защиты головы</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_3' %}" style="white-space: pre-wrap;">Тема 3. Средства индивидуальной защиты органов слуха</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_4' %}" style="white-space: pre-wrap;">Тема 4. Средства индивидуальной защиты глаз</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_5' %}" style="white-space: pre-wrap;">Тема 5. Средства индивидуальной защиты кожи</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_6' %}" style="white-space: pre-wrap;">Тема 6. Средства индивидуальной защиты рук</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_7' %}" style="white-space: pre-wrap;">Тема 7. Средства индивидуальной защиты от падения</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_8' %}" style="white-space: pre-wrap;">Тема 8. Специальная обувь</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_9' %}" style="white-space: pre-wrap;">Тема 9. Специальная одежда</a></li>
+      </ul>
+
+
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;">
+        Тема 2. Средства индивидуальной защиты головы
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#concepts1" style="white-space: pre-wrap;">1. Защитные каски</a></li>
+        <li><a class="dropdown-item" href="#concepts2" style="white-space: pre-wrap;">2. Состав защитной каски</a></li>
+        <li><a class="dropdown-item" href="#concepts3" style="white-space: pre-wrap;">3. Выбор каски</a></li>
+        <li><a class="dropdown-item" href="#concepts4" style="white-space: pre-wrap;">4. Виды касок</a></li>
+        <li><a class="dropdown-item" href="#concepts5" style="white-space: pre-wrap;">5. Аксессуары</a></li>
+        <li><a class="dropdown-item" href="#concepts6" style="white-space: pre-wrap;">6. Назначение</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts1"></a>Защитные каски</h2>
+
+<p style="white-space: pre-wrap;"><b>Защитные каски</b> в обязательном порядке должны применяться повсеместно, где есть вероятность травмирования от падения предметов на голову.
+
+Помимо этого, надо иметь ввиду, что до 30% всех несчастных случаев на производстве происходит не при вертикальном, а при боковом ударе, например, при столкновении головы работающего с твердыми предметами.
+</p>
+
+<a name="events1"></a>
+                         <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px;">
+Основные травмирующие факторы
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#events1" style="white-space: break-spaces;">• Механические (падение сверху или боковой удар)
+• Вероятность поражения электрическим током
+• Экстремальные температуры
+• Воздействие растворов агрессивных сред
+    </a></li>
+  </ul>
+</div>
+
+                        <br>
+<h2 class="post-title"> <a name="concepts2"></a>Состав защитной каски</h2>
+
+       <a name="events2"></a>
+
+                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Корпус
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item" href="#events2" style="white-space: break-spaces;">Главная часть каски, несущая основную нагрузку при выполнении каской ее защитных функций. Корпус может быть с козырьком или широкими полями, с желобчатыми полями или без них. Для большей прочности на корпусе могут быть ребра жесткости.
+
+Каски изготавливаются двух размеров с пределами регулировки:
+I размер - 54 - 58 см;
+II размер - 58 - 62 см.
+</a></li>
+  </ul>
+</div>
+
+       <a name="events3"></a>
+                                                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Внутренняя оснастка
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+    <li><a class="dropdown-item" href="#events3" style="white-space: break-spaces;">Сборная конструкция, предназначенная для фиксации каски на голове, поглощения кинетической энергии, возникающей при ударе, и распределения усилия по поверхности головы.
+
+<b>Внутренняя оснастка включает:</b>
+• амортизатор – часть внутренней оснастки, охватывающая голову, предназначенный для поглощения энергии удара;
+• несущую ленту – элемент внутренней оснастки, который полностью или частично охватывает голову над бровями и фиксирует каску на голове;
+• затылочную ленту – элемент несущей ленты, регулирующий размер каски.
+    </a></li>
+  </ul>
+</div>
+
+                        <br>
+
+<h3 class="post-title"> ПЕЛЕРИНА И ПОДШЛЕМНИКИ</h3>
+
+<p style="white-space: pre-wrap;">В комплект некоторых видов касок могут входить <b>пелерина,</b> защищающая шею и плечи рабочего от влаги, а также <b>подшлемник</b>, применяемый в холодный период года.
+
+Конструкция пелерины и подшлемника позволяет прочно фиксировать их на каске или убирать при ненадобности.
+</p>
+
+                        <br>
+<h2 class="post-title"> <a name="concepts3"></a>Выбор каски</h2>
+
+<p style="white-space: pre-wrap;">Тип и защитные свойства каски должны соответствовать <b>производственному риску.</b>
+
+Каску следует выбирать так, чтобы показатели размера головы укладывались в диапазон регулировки длины несущей ленты данной каски (например, для головы размером 57 следует взять каску с интервалом 54 – 58 см).
+
+При получении каски следует <b>тщательно осмотреть ее корпус и все детали внутренней оснастки.</b> При обнаружении неисправностей, сколов, вмятин, трещин каску необходимо заменить, так как она могла <b>утратить</b> свои защитные свойства.
+</p>
+
+                        <br>
+<h2 class="post-title"> <a name="concepts4"></a>Виды касок</h2>
+
+       <a name="events4"></a>
+
+                                                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Защитная каска общего назначения
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+    <li><a class="dropdown-item" href="#events4" style="white-space: break-spaces;">Твердая оболочка из высокопрочного полиэтилена или поликарбоната. Вес до 300 гр. Оголовье из текстильных или пластиковых лент на 4 - 6 точках крепления. Легкая регулировка по размеру головы. Температурный диапазон применения от -50°C до +40°C.
+
+<b>Каска должна иметь:</b>
+• регулируемый подбородочный ремешок для правильного крепления на голове;
+• достаточное для вентиляции пространство над головой;
+• карманы для крепления очков, наушников, щитков;
+• допускается использование оголовья как с ленточным регулятором, так и с механическим поворотным регулятором.
+    </a></li>
+  </ul>
+</div>
+
+       <a name="events5"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Термостойкая защитная каска
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+    <li><a class="dropdown-item" href="#events5" style="white-space: break-spaces;">Твердая оболочка из высокопрочного полиэтилена или поликарбоната. Вес до 550 гр. Оголовье из текстильных или пластиковых лент на 4 - 6 точках крепления. Легкая регулировка по размеру головы. Температурный диапазон применения от -50°C до +150°C.
+
+<b>Каска должна иметь:</b>
+• регулируемый подбородочный ремешок для правильного крепления на голове;
+• достаточное для вентиляции пространство над головой;
+• карманы для крепления очков, наушников, щитков;
+• допускается использование оголовья как с ленточным регулятором, так и с механическим поворотным регулятором.
+    </a></li>
+  </ul>
+</div>
+
+                        <br>
+<h2 class="post-title"> <a name="concepts5"></a>Аксессуары</h2>
+
+<p style="white-space: pre-wrap;">- Размещение шахтерского фонаря;
+- Размещение сопутствующих СИЗ (щитки, наушники и т.д.);
+- Служебная функция (цвет и эмблема).
+</p>
+
+                        <br>
+<h2 class="post-title"> <a name="concepts6"></a>Назначение</h2>
+
+<p style="white-space: pre-wrap;">• Работы в зонах, обозначенных табличками «Обязательное ношение каски»;
+• Обслуживание технологического оборудования;
+• Грузоподъемные работы и перемещение грузов;
+• Строительные работы;
+• Складские работы;
+• Работы в зоне возможного разбрызгивания расплавленных материалов и химических веществ;
+• Работы в зоне возможного контакта головы с электропроводкой;
+• При опасности контакта головы с низко расположенными элементами конструкций.
+</p>
+
+                        <br>
+  <div>
+      <a href="{% url 'studyapp:topic_4_1' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 1. Средства индивидуальной защиты органов дыхания (СИЗОД)</a>
+      <a href="{% url 'studyapp:topic_4_3' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 3. Средства индивидуальной защиты органов слуха</a>
+</div>
+
+                        <br>
+      <a href="{% url 'studyapp:topics_d' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">К выбору темы</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

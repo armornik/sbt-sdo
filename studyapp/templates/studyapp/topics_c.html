@@ -1,0 +1,55 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 150px; padding-bottom: 100px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+                    <div style="width: 100%">
+                        <div class="post-heading">
+                            <h4>Электронный курс</h4>
+                            <h2>В. Безопасные методы и приемы выполнения работ повышенной опасности</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+
+            <a href="{% url 'studyapp:topic_3_1' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">Тема 1. Основы охраны труда в РФ</a>
+                        <br>
+            <a href="{% url 'studyapp:topic_3_2' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">Тема 2. Безопасные методы и приемы выполнения работ повышенной опасности</a>
+                        <br>
+            <a href="{% url 'studyapp:topic_3_3' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">Тема 3. Работы на высоте</a>
+                        <br>
+            <a href="{% url 'studyapp:topic_3_4' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">Тема 4. Работы, связанные с работами кранов, подъемных механизмов</a>
+                        <br>
+            <a href="{% url 'studyapp:topic_3_5' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">Тема 5. Работы, связанные с эксплуатацией сосудов (баллонов) под давлением</a>
+                        <br>
+            <a href="{% url 'studyapp:topic_3_6' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">Тема 6. Работы по обслуживанию и ремонту тепловых энергоустаново</a>
+                        <br>
+
+            <a href="{% url 'tests:test_a' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%; min-height: 80px; padding-top: 25px;  padding-bottom: 25px;">Пройти тест: Безопасные методы и приемы выполнения работ повышенной опасности</a>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

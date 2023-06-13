@@ -1,0 +1,505 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 150px; padding-bottom: 100px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--                    <div class="col-md-10 col-lg-8 col-xl-7">-->
+                    <div style="width: 100%">
+                        <div class="post-heading">
+                            <h4>Электронный курс</h4>
+                            <h2>Г. Средства индивидуальной защиты</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="position: fixed; left: 10px; width: 20%;">
+  Вспомогательное меню по теме
+</a>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Обучение охране труда</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <b>Г. Средства индивидуальной защиты</b>
+    </div>
+    <div class="dropdown mt-6">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;  width: 100%;">
+Выбрать тему
+      </button>
+
+
+              <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_1' %}" style="white-space: pre-wrap;">Тема 1. Средства индивидуальной защиты органов дыхания (СИЗОД)</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_2' %}" style="white-space: pre-wrap;">Тема 2. Средства индивидуальной защиты головы</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_3' %}" style="white-space: pre-wrap;">Тема 3. Средства индивидуальной защиты органов слуха</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_4' %}" style="white-space: pre-wrap;">Тема 4. Средства индивидуальной защиты глаз</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_5' %}" style="white-space: pre-wrap;">Тема 5. Средства индивидуальной защиты кожи</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_6' %}" style="white-space: pre-wrap;">Тема 6. Средства индивидуальной защиты рук</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_7' %}" style="white-space: pre-wrap;">Тема 7. Средства индивидуальной защиты от падения</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_8' %}" style="white-space: pre-wrap;">Тема 8. Специальная обувь</a></li>
+        <li><a class="dropdown-item" href="{% url 'studyapp:topic_4_9' %}" style="white-space: pre-wrap;">Тема 9. Специальная одежда</a></li>
+      </ul>
+
+
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" style="white-space: pre-wrap;">
+        Тема 6. Средства индивидуальной защиты рук
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#concepts1" style="white-space: pre-wrap;">1. Когда необходимы СИЗ рук?</a></li>
+        <li><a class="dropdown-item" href="#concepts2" style="white-space: pre-wrap;">2. Перчатки</a></li>
+        <li><a class="dropdown-item" href="#concepts3" style="white-space: pre-wrap;">3. Обозначение защитных свойств </a></li>
+        <li><a class="dropdown-item" href="#concepts4" style="white-space: pre-wrap;">4. Нарукавники из полимерных материалов</a></li>
+        <li><a class="dropdown-item" href="#concepts5" style="white-space: pre-wrap;">5. Рекомендации по эффективному использованию перчаток</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts1"></a>Когда необходимы СИЗ рук?</h2>
+
+<p style="white-space: pre-wrap;">Не существует вида трудовой деятельности, который выполнялся бы без участия рук!
+
+<b>15 % всех профессиональных болезней – кожные болезни.</b>
+
+Перчатки используются для защиты рук от физических, химических, биологических опасностей и неблагоприятного воздействия окружающей среды.
+</p>
+
+<a name="events1"></a>
+                         <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px;">
+Механические факторы риска
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#events1" style="white-space: break-spaces;"><b>Источники:</b> движущиеся части машин, острые предметы, вибрация
+
+<b>Последствия:</b> стирание, порезы, проколы, вибрационная болезнь
+    </a></li>
+  </ul>
+</div>
+
+       <a name="events2"></a>
+
+                        <div class="dropdown">
+
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Химические факторы риска
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item" href="#events2" style="white-space: break-spaces;"><b>Источники:</b> брызги и выбросы жидкостей : растворителей, аэрозолей, кислот, цемента, извести и т.д.
+
+<b>Последствия:</b> раздражение кожи, химический ожог, опухоли, аллергия
+</a></li>
+  </ul>
+</div>
+
+       <a name="events3"></a>
+                                                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Термические факторы риска
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+    <li><a class="dropdown-item" href="#events3" style="white-space: break-spaces;"><b>Источники:</b> горячие жидкости, расплавленные и нагретые материалы, пламя, экстремальные температуры
+
+<b>Последствия:</b> ожоги, рак кожи, обморожения
+    </a></li>
+  </ul>
+</div>
+
+                                            <h2 class="post-title"> <a name="concepts2"></a>Перчатки</h2>
+
+<p style="white-space: pre-wrap;"><b>Перчатка</b> – средство индивидуальной защиты, защищающее кисть руки или ее часть от внешних воздействий. Дополнительно может закрывать часть руки до локтя или плеча.
+
+Защитные перчатки не должны оказывать вредного воздействия на кожу рук работающих, должны иметь разрешение к применению от органа государственного санитарно-эпидемиологического надзора.
+</p>
+
+       <a name="events4"></a>
+
+                                                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Общие требования (EN 420)
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+    <li><a class="dropdown-item" href="#events4" style="white-space: break-spaces;">• Перчатки должны соответствовать своему назначению.
+• Перчатки не должны быть вредными для здоровья работников.
+• Имеющиеся на перчатках швы не должны мешать выполнению рабочих операций.
+• Перчатки должны соответствовать размерам по классификации согласно европейским стандартам.
+• На всех защитных перчатках категории 2-3 должны быть указаны название фирмы-производителя, размер, маркировку CE (гарантийная система качества), четырехзначный цифровой индекс, указывающий уровень технических соответствий. Маркировка должна быть читаема на протяжении всего периода использования перчаток.
+• На упаковке должны быть указаны название фирмы-производителя, назначение, размер, маркировка CE Marking, контактный адрес или телефон изготовителя, срок годности. Для перчаток категории 2 и 3 на упаковку наносятся одна или более пиктограмм, показывающих уровень защиты от конкретных опасностей.
+• Инструкция для пользователя должна содержать точные указания по применению изделия, сведения о возможных аллергических реакциях и типе упаковки.
+    </a></li>
+  </ul>
+</div>
+
+                               <a name="events5"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Пример маркировки перчаток
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+    <li><a class="dropdown-item" href="#events5" style="white-space: break-spaces;"><img class="logo__image"
+                                                                    src="{% static 'image/perchi.png' %}">
+    </a></li>
+  </ul>
+</div>
+
+
+
+
+                        <br>
+<h2 class="post-title"> <a name="concepts3"></a>Обозначение защитных свойств</h2>
+<p style="white-space: pre-wrap;">Ниже представлены пиктограммы, обозначающие риски, от которых защищают перчатки:
+
+<img class="logo__image"
+                                                                    src="{% static 'image/pershanki-piktogram.png' %}">
+</p>
+
+                        <br>
+
+<h3 class="post-title"> КРАГИ И МАНЖЕТЫ</h3>
+
+<p style="white-space: pre-wrap;">• Крага (полное покрытие)
+• Крага (частичное покрытие)
+• Трикотажная манжета, полное покрытие
+• Трикотажная манжета, частичное покрытие
+</p>
+
+                        <br>
+
+<h3 class="post-title"> ПЕРЧАТКИ СО СТАНДАРТНЫМ ПОЛИМЕРНЫМ ПОКРЫТИЕМ</h3>
+
+<p style="white-space: pre-wrap;">Полностью/частично покрытая перчатка. Крага/трикотажная манжета.
+
+<b>Технические требования:</b>
+• Покрытие: нитрил
+• Длина перчаток: 290 мм
+• Температурный режим эксплуатации: -20˚С...+45˚С
+• Антистатические свойства
+
+<b>Риски, от которых защищают перчатки:</b>
+• Механические риски
+• Химически опасный фактор
+</p>
+
+                        <br>
+
+<h3 class="post-title"> ПЕРЧАТКИ С ОБЛЕГЧЕННЫМ ПОЛИМЕРНЫМ ПОКРЫТИЕМ</h3>
+
+<p style="white-space: pre-wrap;">Полностью/частично покрытая перчатка, трикотажная манжета.
+
+<b>Технические требования:</b>
+• Покрытие: нитрил
+• Длина перчаток: 240…280 мм
+• Вес не менее 60 г
+• Температурный режим эксплуатации: -10˚С...+45˚С
+• Антистатические свойства
+
+<b>Риски, от которых защищают перчатки:</b>
+• Механические риски
+• Химически опасный фактор
+</p>
+
+                        <br>
+
+<h3 class="post-title"> ПЕРЧАТКИ ТРИКОТАЖНЫЕ С ТОЧЕЧНЫМ ПОЛИМЕРНЫМ ПОКРЫТИЕМ</h3>
+
+<p style="white-space: pre-wrap;"><b>Технические требования:</b>
+• Покрытие: ПВХ
+• Длина перчаток: 240…280 мм
+• Температурный режим эксплуатации: -20˚С...+45˚С
+• Антистатические свойства
+
+<b>Риски, от которых защищают перчатки:</b>
+• Механические риски
+</p>
+
+
+                        <br>
+
+<h3 class="post-title"> ПЕРЧАТКИ С НЕОПРЕНОВЫМ ПОЛИМЕРНЫМ ПОКРЫТИЕМ</h3>
+
+<p style="white-space: pre-wrap;"><b>Технические требования:</b>
+• Покрытие: неопрен
+• Длина перчаток: 305 мм
+• Температурный режим эксплуатации: -20˚С...+120˚С
+• Антистатические свойства
+
+<b>Риски, от которых защищают перчатки:</b>
+• Механические риски
+• Химически опасный фактор
+</p>
+
+
+                        <br>
+
+<h3 class="post-title"> ПЕРЧАТКИ С ПОЛИМЕРНЫМ ПОКРЫТИЕМ, МОРОЗОСТОЙКИЕ</h3>
+
+<p style="white-space: pre-wrap;">Манжета, гладкая поверхность. Крага, рельефная поверхность.
+
+<b>Технические требования:</b>
+• Покрытие: ПВХ
+• Длина перчаток: 265 мм
+• Температурный режим эксплуатации: -40˚С...0˚С
+• Антистатические свойства
+
+<b>Риски, от которых защищают перчатки:</b>
+• Механические риски
+• Химически опасный фактор
+• Риск холода
+</p>
+
+                        <br>
+
+<h3 class="post-title"> ПЕРЧАТКИ ТРИКОТАЖНЫЕ УТЕПЛЕННЫЕ</h3>
+
+<p style="white-space: pre-wrap;">Дополнительные вкладыши.
+
+<b>Технические требования:</b>
+• Состав: шерсть 80% (минимум)
+
+<b>Риски, от которых защищают перчатки:</b>
+• Риск холода
+</p>
+
+                        <br>
+
+<h3 class="post-title"> РУКАВИЦЫ МЕХОВЫЕ</h3>
+
+<p style="white-space: pre-wrap;"><b>Технические требования:</b>
+• Ткань: хлопок 100%, плотность 300 г/м2
+• Подкладка: натуральный мех
+
+<b>Риски, от которых защищают перчатки:</b>
+• Риск холода
+</p>
+
+
+                        <br>
+
+<h3 class="post-title"> ПЕРЧАТКИ АНТИВИБРАЦИОННЫЕ</h3>
+
+<p style="white-space: pre-wrap;"><b>Технические требования:</b>
+• Покрытие: нитрил
+• Длина перчаток: 240 мм
+• Толщина ладонной части перчатки: 7,5 мм
+• Температурный режим эксплуатации: -20˚С …+40˚С
+• Наполнитель: гель Gelform™
+
+<b>Обязательное требование по снижению вибрации:</b>
+• низкочастотные колебания (до 31,5 Герц) не менее 80%
+• среднечастотные колебания (от 31,5 до 200 герц) не менее 70%
+• высокочастотные колебания (от 200 до 1000 герц) не менее 35%
+
+<b>Риски, от которых защищают перчатки:</b>
+• Механические риски
+</p>
+
+
+                        <br>
+
+<h3 class="post-title"> ПЕРЧАТКИ ТЕПЛОСТОЙКИЕ</h3>
+
+<p style="white-space: pre-wrap;"><b>Технические требования:</b>
+• Состав: Kevlar™ Nomex™
+• Длина перчаток: 330 мм.
+• Защита рук от конвективного тепла при работе с предметами, нагретыми до +250˚С…+600˚С
+• Температурный режим эксплуатации: -20˚С …+800˚С
+
+<b>Риски, от которых защищают перчатки:</b>
+• Механические риски
+• Нагрев и огонь
+</p>
+
+                        <br>
+
+<h3 class="post-title"> КРАГИ СПИЛКОВЫЕ</h3>
+
+<p style="white-space: pre-wrap;"><b>Технические требования:</b>
+• Состав: телячья кожа или кожевенный спилок
+• Подкладка: хлопок 100%
+
+<b>Риски, от которых защищают перчатки:</b>
+• Механические риски
+• Нагрев и огонь
+</p>
+
+                        <br>
+
+<h3 class="post-title"> ПЕРЧАТКИ ДИЭЛЕКТРИЧЕСКИЕ</h3>
+
+<p style="white-space: pre-wrap;"><b>Технические требования:</b>
+• Состав: латекс 100%
+• Бесшовные
+• Устойчивость к воздействию кислот и нефтепродуктов
+
+<b>Риски, от которых защищают перчатки:</b>
+• Механические риски
+• Химически опасный фактор
+• Электростатика
+</p>
+                               <a name="events6"></a>
+
+                                                                        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false" style="width:50%; margin-bottom: 10px; white-space: pre-wrap;">
+Требования (EN 60-903)
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+    <li><a class="dropdown-item" href="#events6" style="white-space: break-spaces;"><img class="logo__image"
+                                                                    src="{% static 'image/tok.png' %}">
+    </a></li>
+  </ul>
+</div>
+
+
+                        <br>
+
+<h3 class="post-title"> ПЕРЧАТКИ РЕЗИНОВЫЕ</h3>
+
+<p style="white-space: pre-wrap;"><b>Технические требования:</b>
+• Состав: латекс 100%
+• Длина перчаток : 305 мм
+• Толщина 0,30 мм
+• Рифленая ладонная часть
+• Хлопковое напыление с антибактериальной обработкой
+
+<b>Риски, от которых защищают перчатки:</b>
+• Механические риски
+• Химически опасный фактор
+• Риски, связанные с микроорганизмами
+</p>
+
+                        <br>
+
+<h3 class="post-title"> ПЕРЧАТКИ РЕЗИНОВЫЕ ТЕХНИЧЕСКИЕ</h3>
+
+<p style="white-space: pre-wrap;"><b>Технические требования:</b>
+• Состав: латекс 100%
+• Длина перчаток: 320 мм.
+• Толщина: 0,75 мм
+• Рифленая ладонная часть
+• Хлопковое напыление с антибактериальной обработкой
+• Температурный режим эксплуатации: -20˚С …+40˚С
+
+<b>Риски, от которых защищают перчатки:</b>
+• Механические риски
+• Химически опасный фактор
+• Риски, связанные с микроорганизмами
+</p>
+                        <br>
+
+<h3 class="post-title"> ПЕРЧАТКИ МАСЛОБЕНЗОСТОЙКИЕ</h3>
+
+<p style="white-space: pre-wrap;"><b>Технические требования:</b>
+• Состав: латекс/неопрен
+• Длина перчаток: 323 мм.
+• Толщина 0,68 мм.
+• Рифленая ладонная часть
+• Хлопковое напыление с антибактериальной обработкой
+• Температурный режим эксплуатации: -20˚С …+40˚С
+
+<b>Риски, от которых защищают перчатки:</b>
+• Механические риски
+• Химически опасный фактор
+• Риски, связанные с микроорганизмами
+</p>
+                        <br>
+
+<h3 class="post-title"> ПЕРЧАТКИ ХИМИЧЕСКИ СТОЙКИЕ НИТРИЛБУТАДИЕНОВЫЕ</h3>
+
+<p style="white-space: pre-wrap;"><b>Технические требования:</b>
+• Состав: нитрил
+• Длина перчаток : 380 мм.
+• Толщина 0,45-0,50 мм.
+• Рифленая ладонная часть
+• Хлопковое напыление с антибактериальной обработкой
+• Температурный режим эксплуатации: -20˚С …+40˚С
+
+<b>Риски, от которых защищают перчатки:</b>
+• Механические риски
+• Химически опасный фактор
+• Риски, связанные с микроорганизмами
+</p>
+                        <br>
+
+<h3 class="post-title"> КИСЛОТОЩЕЛОЧЕСТОЙКИЕ РЕЗИНОВЫЕ ПЕРЧАТКИ</h3>
+
+<p style="white-space: pre-wrap;"><b>Технические требования:</b>
+• Стойкость к кислотам и щелочам до 40%
+• Состав: латекс 100%
+• Длина перчаток: 305 мм.
+• Толщина: 0,45 мм.
+• Рифленая ладонная часть
+• Хлопковое напыление с антибактериальной обработкой
+
+<b>Риски, от которых защищают перчатки:</b>
+• Механические риски
+• Химически опасный фактор
+• Риски, связанные с микроорганизмами
+</p>
+
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts4"></a>Нарукавники из полимерных материалов</h2>
+
+<p style="white-space: pre-wrap;"><b>Технические требования:</b>
+• Состав: ПВХ 100%
+• Длина: 460 мм
+• Толщина: 0,203 мм
+
+<b>Риски, от которых защищают перчатки:</b>
+• Химически опасный фактор
+• Риски, связанные с микроорганизмами
+</p>
+
+                        <br>
+                                               <h2 class="post-title"> <a name="concepts5"></a>Рекомендации по эффективному использованию перчаток</h2>
+
+<p style="white-space: pre-wrap;">• Хранить перчатки в сухих помещениях при комнатной температуре
+• Избегать попадания прямых солнечных лучей (в том числе у заднего стекла автомобиля)
+• Использованные перчатки могут быть загрязнены инфекционными или другими опасными материалами
+• Удаляйте их в соответствии с правилами, установленными местными властями. Вывозите их на свалку или сжигайте в контролируемых условиях.
+</p>
+
+
+
+                        <br>
+  <div>
+            <a href="{% url 'studyapp:topic_4_5' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 5. Средства индивидуальной защиты кожи</a>
+            <a href="{% url 'studyapp:topic_4_7' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 49%; display: table-cell; vertical-align: middle">Тема 7. Средства индивидуальной защиты от падения</a>
+</div>
+
+                        <br>
+      <a href="{% url 'studyapp:topics_d' %}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true" style="margin-bottom: 5px; width: 100%;">К выбору темы</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}
