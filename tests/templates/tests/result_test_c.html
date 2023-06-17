@@ -1,0 +1,48 @@
+{% extends 'info/header_footer.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 100px; padding-bottom: 0px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+                                        <br>
+<h2>Ваш результат: {{answered_right}} из {{student.max_danger}}</h2>
+                <br>
+                <h4>Не верно ответили на следующие вопросы:</h4>
+
+                {% for answer in unanswered_questions_answer %}
+    Вопрос: <b>{{answer.0}}</b>
+                <br>
+    Ваш ответ: {{answer.1}}
+                <br>
+    Правильный ответ: {{answer.2}}
+                <br>
+                <br>
+                {% endfor %}
+
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}

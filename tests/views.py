@@ -65,16 +65,29 @@ QUESTIONS_B = {'1': ['Защита по разбросу проявляется 
                }
 
 
-questions = []
-unanswered_questions_answer = []
+QUESTIONS_C = {'1': ['На производстве каких работ на объектах теплоснабжения и теплопотрябляющих установках должен выдаваться наряд-допуск?', 'Все перечисленные', 'Ремонт вращающихся механизмов', 'Нанесение антикоррозионных покрытий', 'Все перечисленные'],
+               '2': ['Каким документом оформляется допуск к самостоятельной работе по эксплуатации тепловых энергоустановок?', 'Организационно-распорядительным документом', 'Протоколом', 'Организационно-распорядительным документом', 'Актом'],
+               '3': ['Когда могут быть допущены работники к самостоятельному выполнению работ по эксплуатации объектов теплоснабжения и теплопотребляющих установок?', 'После проверки знаний', 'После проверки знаний', 'Все перечисленное верно', 'После проведения обучения'],
+               '4': ['Какова минимальная продолжительность стажировки для работников 1 и 2 группы после завершения обучения безопасным методом и приемом выполнения работ в ограниченных и замкнутых пространствах и получением удостоверения?', 'Не менее 2 рабочих дней (смен)', 'Не менее 2 рабочих дней (смен)', 'Не менее 10 рабочих дней (смен)', 'Не менее 15 рабочих дней (смен)'],
+               '5': ['На какой срок разрешается продлевать наряд-допуск для производства работ в крупных электроустановках?', 'Не более чем на 15 календарных дней', 'Не более чем на 10 календарных дней', 'Не более чем на 15 календарных дней', 'Не более чем на 30 рабочих дней со дня начала работы'],
+               '6': ['Какие съемные грузозахватные приспособления (стропы, кольца, петли)не доходят до эксплуатации?', 'Все перечисленное верно', 'При отсутствии бирки (клеймо)', 'Все перечисленное верно', 'В присутствии деформированных коуши'],
+               '7': ['Погрузка и разгрузка грузов какой массы должна производиться с использованием грузоподъемных машин?', 'Массой более 500 кг', 'Массой более 300 кг', 'Массой более 200 кг', 'Массой более 500 кг'],
+               '8': ['Какой плакат должен быть вывешен при выполнении работ под напряжением, на приводах ручного и дистанционного управления коммутационными аппаратами?', '«Работа под напряжением. Повторно не встречается!»', '«Осторожно работай!»', '«Не записано! Работают люди»', '«Работа под напряжением. Повторно не встречается!»'],
+               '9': ['При транспортировке грузов на какой-то скорости при сборке навесных конвейеров под сборку должны быть установлены градационные устройства, обеспечение безопасности работников при случайном падении загрузки?', 'На высоте свыше 2 м', 'На высоте свыше 2,5 м', 'На высоте свыше 2 м', 'На высоте свыше 1 м'],
+               '10': ['Что необходимо выполнить перед началом ремонта на теплопотребляющей установке и трубопроводе?', 'Все перечисленное верно', 'Электроприводы отключающей арматуры должны быть обесточены', 'Все перечисленное верно', 'нужно снять давление'],
+              }
+
+
+# questions = []
+# unanswered_questions_answer = []
 
 
 @login_required
-def test_a(request):
+def test_a(request, questions=[], unanswered_questions_answer=[]):
     # print(request.headers)
 
-    global questions
-    global unanswered_questions_answer
+    # global questions
+    # global unanswered_questions_answer
     # global answered
     # print(questions)
     student = AppUser.objects.filter(username=request.user).first()
@@ -150,11 +163,11 @@ def test_a(request):
 
 
 @login_required
-def test_b(request):
+def test_b(request, questions=[], unanswered_questions_answer=[]):
     # print(request.headers)
 
-    global questions
-    global unanswered_questions_answer
+    # global questions
+    # global unanswered_questions_answer
     # global answered
     # print(questions)
     student = AppUser.objects.filter(username=request.user).first()
@@ -230,6 +243,74 @@ def test_b(request):
 
 
 @login_required
+def test_c(request, questions=[], unanswered_questions_answer=[]):
+
+    student = AppUser.objects.filter(username=request.user).first()
+    if student.result_score == 0:
+        # Обнуляем значение ранее проходимых тестов
+        student.result_danger = 0
+        student.read_danger = 0
+        student.save()
+        unanswered_questions_answer = []
+
+        # Набираем список вопросов с ответами из общего словаря
+        while len(questions) < 10:
+            question_1 = QUESTIONS_C[random.choice(list(QUESTIONS_C))]
+            if question_1 not in questions:
+                questions.append(question_1)
+    student.result_score = student.result_danger + student.read_danger
+
+    question = questions.pop()
+
+    if request.method == 'POST':
+        if not student.result_score:
+            question = questions.pop()
+        student.result_score += 1
+        student.save()
+        check_answer = request.POST['answer'].split(';')
+
+        if check_answer[0] == check_answer[1]:
+            student.result_danger += 1
+            student.save()
+        else:
+            list_unanswered = [check_answer[2], check_answer[0], check_answer[1]]
+            unanswered_questions_answer.append(list_unanswered)
+            student.read_danger += 1
+            student.save()
+
+    context = {
+        'title': f'СДО {NAME_ORGANIZATION}',
+        'name': NAME_ORGANIZATION,
+        'questions': question,
+        'questions_list': questions,
+        'student': student,
+        'answered': student.result_score,
+        'unanswered_questions_answer': unanswered_questions_answer
+    }
+
+    student.save()
+    if student.result_score < 9:
+        return render(request, 'tests/test_c.html', context=context)
+    else:
+        # answered = 0
+        context = {
+            'title': f'СДО {NAME_ORGANIZATION}',
+            'name': NAME_ORGANIZATION,
+            'questions': question,
+            'questions_list': questions,
+            'student': student,
+            'answered': student.result_score,
+            'answered_right': student.result_danger,
+            'unanswered_questions_answer': unanswered_questions_answer
+        }
+        student.result_danger = 0
+        student.read_danger = 0
+        student.result_score = 0
+        student.save()
+        return render(request, 'tests/result_test_c.html', context=context)
+
+
+@login_required
 def exit_test_a(request):
 
     student = AppUser.objects.filter(username=request.user).first()
@@ -253,6 +334,23 @@ def exit_test_b(request):
 
     student.result_safe = 0
     student.read_safe = 0
+    student.result_score = 0
+    student.save()
+
+    context = {
+        'title': f'СДО {NAME_ORGANIZATION}',
+        'name': NAME_ORGANIZATION,
+    }
+    return render(request, 'info/index.html', context=context)
+
+
+@login_required
+def exit_test_c(request):
+
+    student = AppUser.objects.filter(username=request.user).first()
+
+    student.result_danger = 0
+    student.read_danger = 0
     student.result_score = 0
     student.save()
 

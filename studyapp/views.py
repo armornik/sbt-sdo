@@ -245,7 +245,7 @@ def topic_3_6(request):
 #     }
 #     if request.method == 'POST':
 #         pass
-#     return render(request, 'studyapp/studying_c_7.html', context=context)
+#     return render(request, 'studyapp/studying_c_7_not.html', context=context)
 #
 #
 # @login_required
