@@ -1,0 +1,63 @@
+{% extends 'tests/header_footer_d.html' %}
+
+{% load static %}
+
+{% block content %}
+                <!-- Page Header-->
+        <header class="masthead" style="padding-top: 100px; padding-bottom: 0px;">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content-->
+
+
+
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+
+                                        <br>
+
+
+
+ <form action="" method="post">
+           {% csrf_token %}
+  <p><b>{{questions.0}}</b></p>
+
+  <div>
+    <input type="radio" id="questionChoice1"
+     name="answer" value="{{questions.2}};{{questions.1}};{{questions.0}}">
+    <label for="questionChoice1">{{questions.2}}</label>
+      <br>
+
+    <input type="radio" id="questionChoice2"
+     name="answer" value="{{questions.3}};{{questions.1}};{{questions.0}}">
+    <label for="questionChoice2">{{questions.3}}</label>
+      <br>
+
+    <input type="radio" id="questionChoice3"
+     name="answer" value="{{questions.4}};{{questions.1}};{{questions.0}}">
+    <label for="questionChoice3">{{questions.4}}</label>
+      <br>
+  </div>
+  <div>
+      <br>
+    <button type="submit">Ответить</button>
+  </div>
+</form>
+
+
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endblock %}
